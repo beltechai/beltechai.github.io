@@ -115,9 +115,7 @@ a {
   video{
   width:100%;
   }
-li{
-  margin: 8px 0;
-}
+
 header {
   position: fixed;
   top: 0;
@@ -540,6 +538,9 @@ h6 {
 
 .height350{
     height: 350px;
+}
+.height li{
+  margin: 8px 0;
 }
   
 .height3{
