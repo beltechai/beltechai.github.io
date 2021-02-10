@@ -281,7 +281,7 @@
     var data;
 
     $(document).ready(function () {
-    jQuery.get("team.csv", (csv) => {
+    jQuery.get("/team/team.csv", (csv) => {
     data = $.csv.toObjects(csv);
 
     $(".team-wrapper").on("click", ".team-member", function () {
