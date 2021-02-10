@@ -101,7 +101,7 @@ function headerScroll(page) {
   if (i > 0) {
     $("header").addClass("min");
   } else {
-    $("header").removeClass("min");
+    // $("header").removeClass("min");
   }
 }
 
