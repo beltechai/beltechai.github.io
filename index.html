@@ -131,7 +131,7 @@
       <div class="content-lg">
         <div class="team-wrapper">
           <div class="team-member"
-            aria-label='"Name":"Agastya Bellad","Position":"CEO","ImagePath":"Agastya.png","Location":"Bangalore, India","LinkedIn":"https://www.linkedin.com/in/agastyabellad/","Website":"NA","Resume":"NA","About":"Agastya likes working in a fast moving, energetic, and creative environment. Prior to founding Beltech, he worked at INDwealth as an "Entrepreneur in Residence" with Ashish Kashyap. Agastya is currently also working as an acting CEO at the Bellad Group of Companies, managing over 25 branches and 600 people.Apart from being a workoholic, Agastya loves boxing, squash, and hockey. He also enjoys the occasional hike.","School":"Boston University"'>
+            aria-label="1">
             <div class="photo"><img src="./team/Agastya.png" alt="Team member image" /></div>
             <p class="lg">Agastya Bellad</p>
             <p>CEO</p>
@@ -241,7 +241,7 @@
   <script type="text/javascript" src="js/static.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
-  <!-- <script>
+  <script>
     function generatePopUp(data) {
       return `<div class="close-button"><i class="fas fa-times"></i></div>
   <div class="content-lg">
@@ -277,10 +277,16 @@
       $(".black-screen").removeClass("close");
       $(".team-pop-up").html(generatePopUp(doc));
     }
+
+    var data;
+
+    $(document).ready(function () {
+    jQuery.get("team.csv", (csv) => {
+    data = $.csv.toObjects(csv);
+
     $(".team-wrapper").on("click", ".team-member", function () {
-      let data = $(this).attr("aria-label");
-      console.log(data)
-      openPopUp(JSON.parse(data));
+      let i = $(this).attr("aria-label");
+      openPopUp(data[i]);
     });
 
     $(".team-pop-up").on("click", ".close-button", function () {
@@ -292,7 +298,9 @@
       $(".team-pop-up").addClass("close");
       $(".black-screen").addClass("close");
     });
-  </script> -->
+  });
+});
+  </script>
   <!-- <script type="text/javascript" src="../js/team.js"></script> -->
 </body>
 
