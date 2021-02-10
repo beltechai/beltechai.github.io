@@ -920,7 +920,7 @@ input.search-box:focus {
   padding: 40px 0px; }
   .team-wrapper .team-member {
     width: calc(240px - 40px);
-    height: calc(260px - 40px);
+    height: calc(300px - 40px);
     padding: 20px;
     padding-bottom: 40px;
     border: 1px solid #ebf0f3;
