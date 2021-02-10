@@ -246,13 +246,13 @@
   <script type="text/javascript" src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
   <script>
-function generateCareerElem(data, index) {
-  return `<div class="team-member" aria-label="${index}">
+    function generateCareerElem(data, index) {
+      return `<div class="team-member" aria-label="${index}">
     <div class="photo"><img src="/team/${data.ImagePath}" alt="Team member image"/></div>
     <p class="lg">${data.Name}</p>
     <p>${data.Position}</p>
   </div>`;
-}
+    }
 
     function generatePopUp(data) {
       return `<div class="close-button"><i class="fas fa-times"></i></div>
@@ -285,11 +285,14 @@ function generateCareerElem(data, index) {
     }
 
     function fillCareers(arr) {
-  $(".team-wrapper").html("");
-  arr.map((doc, index) => {
-    $(".team-wrapper").append(generateCareerElem(doc, index));
-  });
-}
+      $(".team-wrapper").html("");
+      for(let i = 0; i <= 5; i++){
+        $(".team-wrapper").append(generateCareerElem(doc, i));
+      }
+      // arr.map((doc, index) => {
+      //   $(".team-wrapper").append(generateCareerElem(doc, index));
+      // });
+    }
 
     function openPopUp(doc) {
       $(".team-pop-up").removeClass("close");
@@ -300,28 +303,28 @@ function generateCareerElem(data, index) {
     var data;
 
     $(document).ready(function () {
-    jQuery.get("/team/team.csv", (csv) => {
-      data = $.csv.toObjects(csv);
-      fillCareers(data);
+      jQuery.get("/team/team.csv", (csv) => {
+        data = $.csv.toObjects(csv);
+        fillCareers(data);
 
-      console.log(data)
+        console.log(data)
 
-    $(".team-wrapper").on("click", ".team-member", function () {
-      let i = $(this).attr("aria-label");
-      openPopUp(data[i]);
+        $(".team-wrapper").on("click", ".team-member", function () {
+          let i = $(this).attr("aria-label");
+          openPopUp(data[i]);
+        });
+
+        $(".team-pop-up").on("click", ".close-button", function () {
+          $(".team-pop-up").addClass("close");
+          $(".black-screen").addClass("close");
+        });
+
+        $(".black-screen").click(function () {
+          $(".team-pop-up").addClass("close");
+          $(".black-screen").addClass("close");
+        });
+      });
     });
-
-    $(".team-pop-up").on("click", ".close-button", function () {
-      $(".team-pop-up").addClass("close");
-      $(".black-screen").addClass("close");
-    });
-
-    $(".black-screen").click(function () {
-      $(".team-pop-up").addClass("close");
-      $(".black-screen").addClass("close");
-    });
-  });
-});
   </script>
   <!-- <script type="text/javascript" src="../js/team.js"></script> -->
 </body>
