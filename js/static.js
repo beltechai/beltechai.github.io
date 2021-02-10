@@ -99,11 +99,13 @@ function generateFooter(page) {
 function headerScroll(page) {
   console.log(page)
   let i = $(window).scrollTop();
+  if(page == "home"){
   if (i > 0) {
     $("header").addClass("min");
   } else {
     $("header").removeClass("min");
   }
+}
 }
 
 function openNav(page) {
