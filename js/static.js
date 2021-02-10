@@ -97,11 +97,12 @@ function generateFooter(page) {
 }
 
 function headerScroll(page) {
+  console.log(page)
   let i = $(window).scrollTop();
   if (i > 0) {
     $("header").addClass("min");
   } else {
-    // $("header").removeClass("min");
+    $("header").removeClass("min");
   }
 }
 
