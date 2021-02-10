@@ -286,12 +286,10 @@
 
     function fillCareers(arr) {
       $(".team-wrapper").html("");
-      for(let i = 0; i <= 5; i++){
-        $(".team-wrapper").append(generateCareerElem(doc, i));
-      }
-      // arr.map((doc, index) => {
-      //   $(".team-wrapper").append(generateCareerElem(doc, index));
-      // });
+      arr.map((doc, index) => {
+        console.log(index)
+        $(".team-wrapper").append(generateCareerElem(doc, index));
+      });
     }
 
     function openPopUp(doc) {
