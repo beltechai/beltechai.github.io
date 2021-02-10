@@ -125,7 +125,7 @@
       </div>
     </div>
   </section>
-  <section id="team" class="fix-space-bottom">
+  <!-- <section id="team" class="fix-space-bottom">
     <div class="content-md">
       <h3 class="center">Our Core Team</h3>
         <div class="team-wrapper">
@@ -165,6 +165,12 @@
         <a href="./team"><button class="color">
             Our Complete Team <i class="fas fa-user-friends"></i></button></a>
       </div>
+    </div>
+  </section> -->
+  <section class="intro fix-space-bottom">
+    <div class="content-md">
+      <h3 class="center">Our Complete Team</h3>
+      <div class="team-wrapper"></div>
     </div>
   </section>
   <section id="product" class="grey fix-space-bottom fix-space-top">
@@ -240,6 +246,14 @@
   <script type="text/javascript" src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
   <script>
+function generateCareerElem(data, index) {
+  return `<div class="team-member" aria-label="${index}">
+    <div class="photo"><img src="/team/${data.ImagePath}" alt="Team member image"/></div>
+    <p class="lg">${data.Name}</p>
+    <p>${data.Position}</p>
+  </div>`;
+}
+
     function generatePopUp(data) {
       return `<div class="close-button"><i class="fas fa-times"></i></div>
   <div class="content-lg">
@@ -270,6 +284,13 @@
   </div>`;
     }
 
+    function fillCareers(arr) {
+  $(".team-wrapper").html("");
+  arr.map((doc, index) => {
+    $(".team-wrapper").append(generateCareerElem(doc, index));
+  });
+}
+
     function openPopUp(doc) {
       $(".team-pop-up").removeClass("close");
       $(".black-screen").removeClass("close");
@@ -281,6 +302,7 @@
     $(document).ready(function () {
     jQuery.get("/team/team.csv", (csv) => {
       data = $.csv.toObjects(csv);
+      fillCareers(data);
 
       console.log(data)
 
