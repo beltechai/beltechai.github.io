@@ -299,8 +299,8 @@ header {
 
 header.min {
   height: 70px;
-  background: #1d233a;
-  box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1);
+  background: #1d233a !important;
+  box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important;
 
   .logo {
     height: 100%;
@@ -405,12 +405,12 @@ section.home-bg {
 }
 
 section.intro {
-  padding-top: calc(100px + 100px) !important;
+  padding-top: 18% !important;
   padding-bottom: calc(100px + 0px) !important;
 }
 
 section.add-space-bottom {
-  padding-bottom: 260px !important;
+  padding-bottom: 16% !important;
 }
 
 section.fix-space-bottom {
@@ -452,6 +452,10 @@ section.dark {
   p {
     color: $text-light;
   }
+}
+
+.height350{
+  height: 350px;
 }
 
 section.dark-color {
@@ -540,13 +544,13 @@ button {
   position: relative;
   background: $primary-color;
   padding: 14px 24px;
-  margin: 10px;
+  margin: 10px !important; 
   cursor: pointer;
   color: #fff;
   outline: none;
   font-weight: 700;
   border: none;
-  border-radius: 4px;
+  border-radius: 4px !important;
   z-index: 10;
   font-family: $primary-font;
   font-size: 0.9rem;
@@ -586,6 +590,18 @@ button:after {
 
 button:hover:after {
   top: 0;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(216, 216, 216, 0.2) !important;
+  transition: 0.3s;
+  background: #f5f9fc !important;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 
+0 8px 16px 0 rgba(255, 253, 253, 0.2);
 }
 
 p {
@@ -905,6 +921,7 @@ input.search-box:focus {
 
   .team-member {
     width: calc(240px - 40px);
+    height: calc(260px - 40px);
     padding: 20px;
     padding-bottom: 40px;
     border: 1px solid $bluegrey;
@@ -1103,11 +1120,11 @@ p.social-links {
   }
 
   section.intro {
-    padding-top: calc(70px + 100px) !important;
+    padding-top: 18% !important;
   }
 
   section.add-space-bottom {
-    padding-bottom: 175px !important;
+    padding-bottom: 16% !important;
   }
 
   section.fix-space-bottom {
@@ -1226,7 +1243,7 @@ p.social-links {
   }
 
   button {
-    margin: 5px;
+    margin: 5px !important;
   }
 
   header {
@@ -1244,11 +1261,11 @@ p.social-links {
   }
 
   section.intro {
-    padding-top: calc(50px + 100px) !important;
+    padding-top: 18% !important;
   }
 
   section.add-space-bottom {
-    padding-bottom: 125px !important;
+    padding-bottom: 16% !important;
   }
 
   section.fix-space-bottom {

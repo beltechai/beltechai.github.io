@@ -309,9 +309,9 @@ header {
 
 header.min {
   height: 70px;
-  background: #1d233a;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1);
-  box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1); }
+  background: #1d233a !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important;
+  box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important; }
   header.min .logo {
     height: 100%; }
 
@@ -427,7 +427,7 @@ nav {
     }
 
 section {
-  padding: 100px 0px;
+  padding: 50px 0px;
   width: 100%;
   background: #fff; }
 
@@ -538,6 +538,10 @@ h6 {
   font-size: 1.2rem;
   margin: 0px; }
 
+.height350{
+    height: 350px;
+}
+  
 .height3{
   height: 3rem;
 }
@@ -571,13 +575,13 @@ button {
   position: relative;
   background: #23c0ff;
   padding: 14px 24px;
-  margin: 10px;
+  margin: 10px !important;
   cursor: pointer;
   color: #fff;
   outline: none;
   font-weight: 700;
   border: none;
-  border-radius: 4px;
+  border-radius: 4px !important;
   z-index: 10;
   font-family: "Spartan", sans-serif;
   font-size: 0.9rem;
@@ -623,14 +627,14 @@ button:hover:after {
 
   .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(216, 216, 216, 0.2) !important;
     transition: 0.3s;
-    background: #f5f9fc;
+    background: #f5f9fc !important;
   }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
     box-shadow: 
-  0 8px 16px 0 rgba(0,0,0,0.2);
+  0 8px 16px 0 rgba(255, 253, 253, 0.2);
   }
 
 p {
@@ -916,6 +920,7 @@ input.search-box:focus {
   padding: 40px 0px; }
   .team-wrapper .team-member {
     width: calc(240px - 40px);
+    height: calc(260px - 40px);
     padding: 20px;
     padding-bottom: 40px;
     border: 1px solid #ebf0f3;
@@ -1171,7 +1176,7 @@ p.social-links a:hover {
   .content-about {
     width: 100%; }
   button {
-    margin: 5px; }
+    margin: 5px !important; }
   header .links {
     display: none; }
   header .hamburger {
