@@ -97,7 +97,6 @@ function generateFooter(page) {
 }
 
 function headerScroll(page) {
-  console.log(page)
   let i = $(window).scrollTop();
   if(page == "home"){
   if (i > 0) {
