@@ -249,9 +249,8 @@
     function fillCareers(arr) {
       $(".team-wrapper").html("");
       arr.map((doc, index) => {
-        console.log(index)
-        if(index <= 5){
-        $(".team-wrapper").append(generateCareerElem(doc, index));
+        if (index <= 5) {
+          $(".team-wrapper").append(generateCareerElem(doc, index));
         }
       });
     }
@@ -268,9 +267,6 @@
       jQuery.get("/team/team.csv", (csv) => {
         data = $.csv.toObjects(csv);
         fillCareers(data);
-
-        console.log(data)
-
         $(".team-wrapper").on("click", ".team-member", function () {
           let i = $(this).attr("aria-label");
           openPopUp(data[i]);
@@ -288,7 +284,6 @@
       });
     });
   </script>
-  <!-- <script type="text/javascript" src="../js/team.js"></script> -->
 </body>
 
 </html>
