@@ -282,7 +282,9 @@
 
     $(document).ready(function () {
     jQuery.get("/team/team.csv", (csv) => {
-    data = $.csv.toObjects(csv);
+      data = $.csv.toObjects(csv);
+
+      console.log(data)
 
     $(".team-wrapper").on("click", ".team-member", function () {
       let i = $(this).attr("aria-label");
