@@ -288,7 +288,9 @@
       $(".team-wrapper").html("");
       arr.map((doc, index) => {
         console.log(index)
+        if(index <= 5){
         $(".team-wrapper").append(generateCareerElem(doc, index));
+        }
       });
     }
 
