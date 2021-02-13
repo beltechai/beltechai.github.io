@@ -25,6 +25,11 @@
 ::selection {
   background: #c4bdb188; }
 
+
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+
 /*Body*/
 .loader {
   position: fixed;
