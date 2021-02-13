@@ -315,10 +315,6 @@ header.min {
   margin: 50px 0px;
 }
 
-.mr10{
-  margin-right: 10rem;
-}
-
 nav {
   position: fixed;
   // height: 100%;
@@ -1107,12 +1103,19 @@ p.social-links {
   opacity: 0;
   transform: scale(0);
 }
+.mr10{
+  margin-right: 10rem;
+}
+
 
 @media only screen and (max-width: 1000px) {
   .content {
     width: 70%;
   }
-
+  .mr10{
+    margin-right: 10rem;
+  }
+  
   .content-md {
     width: 90%;
   }
@@ -1248,6 +1251,10 @@ p.social-links {
 }
 
 @media only screen and (max-width: 600px) {
+  .mr10{
+    margin-right: 0rem;
+  }
+  
   .content {
     width: 85%;
   }

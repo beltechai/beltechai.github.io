@@ -323,9 +323,6 @@ header.min {
 .margins-xl {
   margin: 50px 0px; }
 
-  .mr10{
-    margin-right: 10rem;
-  }
 
 .padding-lr2{
   padding: 0 2rem;
@@ -1088,7 +1085,15 @@ p.social-links a:hover {
   -ms-transform: scale(0);
   transform: scale(0); }
 
+  .mr10{
+    margin-right: 10rem;
+  }
+  
+
 @media only screen and (max-width: 1000px) {
+  .mr10{
+    margin-right: 10rem;
+  }
   .content, .content-home {
     width: 50%; }
   .content-md, .content-home-md{
@@ -1183,6 +1188,9 @@ p.social-links a:hover {
     margin: 15px; } }
 
 @media only screen and (max-width: 600px) {
+  .mr10{
+    margin-right: 0rem;
+  }  
   .content,
   .content-home,
   .content-about {
