@@ -7,7 +7,7 @@ $secondary-color: #f58706;
 $bluegrey: #ebf0f3;
 $primary-color-highlight: rgb(82, 149, 250);
 $header-height: 100px;
-$dark: #12161d;
+$dark: #133d51;
 $text-dark: #1d2e47;
 $text: #58788c;
 $text-light: #b0bdca;
@@ -299,7 +299,7 @@ header {
 
 header.min {
   height: 70px;
-  background: #1d233a !important;
+  background: #133d51 !important;
   box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important;
 
   .logo {
@@ -313,6 +313,10 @@ header.min {
 
 .margins-xl {
   margin: 50px 0px;
+}
+
+.mr10{
+  margin-right: 10rem;
 }
 
 nav {
@@ -410,7 +414,7 @@ section.intro {
 }
 
 section.add-space-bottom {
-  padding-bottom: 24% !important;
+  padding-bottom: 20% !important;
 }
 
 section.fix-space-bottom {
@@ -459,7 +463,7 @@ section.dark {
 }
 
 section.dark-color {
-  background-color: #1d233a;
+  background-color: #174657;
 }
 
 section.full-height {
@@ -485,7 +489,7 @@ section.no-padding {
 
 hr {
   width: 50px;
-  border: 2px solid #f58706;
+  border: 2px solid #f58706 !important;
   margin: 10px 0px;
 }
 
@@ -1124,7 +1128,7 @@ p.social-links {
   }
 
   section.add-space-bottom {
-    padding-bottom: 24% !important;
+    padding-bottom: 20% !important;
   }
 
   section.fix-space-bottom {
@@ -1242,6 +1246,22 @@ p.social-links {
     width: 85%;
   }
 
+  nav {
+    position: fixed;
+    height: 100% !important;
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: none;
+    opacity: 0;
+    z-index: 999;
+    pointer-events: all;
+    -webkit-transition: all 0.4s cubic-bezier(0.43, 0.13, 0.15, 0.99);
+    -moz-transition: all 0.4s cubic-bezier(0.43, 0.13, 0.15, 0.99);
+    -o-transition: all 0.4s cubic-bezier(0.43, 0.13, 0.15, 0.99);
+    transition: all 0.4s cubic-bezier(0.43, 0.13, 0.15, 0.99); }
+
   button {
     margin: 5px !important;
   }
@@ -1265,7 +1285,7 @@ p.social-links {
   }
 
   section.add-space-bottom {
-    padding-bottom: 24% !important;
+    padding-bottom: 20% !important;
   }
 
   section.fix-space-bottom {

@@ -307,7 +307,7 @@ header {
 
 header.min {
   height: 70px;
-  background: #1d233a !important;
+  background: #133d51 !important;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important;
   box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important; }
   header.min .logo {
@@ -322,6 +322,10 @@ header.min {
 
 .margins-xl {
   margin: 50px 0px; }
+
+  .mr10{
+    margin-right: 10rem;
+  }
 
 .padding-lr2{
   padding: 0 2rem;
@@ -442,7 +446,7 @@ section.intro {
   padding-bottom: calc(100px + 0px) !important; }
 
 section.add-space-bottom {
-  padding-bottom: 24% !important; }
+  padding-bottom: 20% !important; }
 
 section.fix-space-bottom {
   padding-bottom: 50px; }
@@ -474,7 +478,7 @@ section.dark {
     color: #b0bdca; }
 
 section.dark-color {
-  background-color: #1d233a; }
+  background-color: #174657; }
 
 section.full-height {
   height: 100vh;
@@ -500,9 +504,10 @@ section.no-padding {
   color:#f58706 !important;
 }
 
+
 hr {
   width: 50px;
-  border: 2px solid #f58706;
+  border: 2px solid #f58706 !important;
   margin: 10px 0px; }
 
 hr.bottom-margin {
@@ -537,7 +542,7 @@ h6 {
   margin: 0px; }
 
 .height350{
-    height: 350px;
+    height: 300px;
 }
 .height li{
   margin: 8px 0;
@@ -553,7 +558,7 @@ h6 {
   text-align: right !important;
 }
 .coming-soon{
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
   color: #f58706 !important;
 }
 .highlight {
@@ -574,7 +579,7 @@ h6 {
 
 button {
   position: relative;
-  background: #23c0ff;
+  background: #58d1e3;
   padding: 14px 24px;
   margin: 10px !important;
   cursor: pointer;
@@ -704,7 +709,7 @@ p {
 footer {
   padding: 50px 0px;
   padding-bottom: 15px;
-  background: #12161d; }
+  background: #133d51; }
   footer p.sm {
     color: #b0bdca;
     font-size: 10px;
@@ -1095,7 +1100,7 @@ p.social-links a:hover {
   section.intro {
     padding-top: 18% !important; }
   section.add-space-bottom {
-    padding-bottom: 24%  !important; }
+    padding-bottom: 20%  !important; }
   section.fix-space-bottom {
     padding-bottom: 35px; }
   section.fix-space-top {
@@ -1176,6 +1181,21 @@ p.social-links a:hover {
   .content-home,
   .content-about {
     width: 100%; }
+    nav {
+      position: fixed;
+      height: 100% !important; 
+      width: 100% !important;
+      background: rgba(255, 255, 255, 0.9);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      display: none;
+      opacity: 0;
+      z-index: 999;
+      pointer-events: all;
+      -webkit-transition: all 0.4s cubic-bezier(0.43, 0.13, 0.15, 0.99);
+      -moz-transition: all 0.4s cubic-bezier(0.43, 0.13, 0.15, 0.99);
+      -o-transition: all 0.4s cubic-bezier(0.43, 0.13, 0.15, 0.99);
+      transition: all 0.4s cubic-bezier(0.43, 0.13, 0.15, 0.99); }
   button {
     margin: 5px !important; }
   header .links {
@@ -1187,7 +1207,7 @@ p.social-links a:hover {
   section.intro {
     padding-top: 18% !important; }
   section.add-space-bottom {
-    padding-bottom: 24% !important; }
+    padding-bottom: 20% !important; }
   section.fix-space-bottom {
     padding-bottom: 25px; }
   section.fix-space-top {
