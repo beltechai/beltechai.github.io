@@ -561,6 +561,12 @@ h6 {
   letter-spacing: 0.5rem;
   color: #f58706 !important;
 }
+.full-width{
+  width: 100%;
+}
+.margintb5{
+  margin: 5rem 0;
+}
 .highlight {
   color: #f58706 !important; }
 
