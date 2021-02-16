@@ -126,11 +126,21 @@ function closeNav(page) {
   navToggle = false;
 }
 
+function generateDropDown(page){
+  const dropDownList = `<a class="dropDown-element" href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}">Traffic Mangement</a>
+  <a class="dropDown-element"  href="${page == "home" ? "./security" : "../security"}">Security</a>
+  <a class="dropDown-element"  href="${page == "home" ? "./smart-city" : "../smart-city"}">Smart City</a>
+  <a class="dropDown-element" href="${page == "home" ? "./public-transport" : "../public-transport"}">Public Transport</a>`
+
+  return dropDownList;
+}
+
 $(document).ready(function () {
   const page = $("header").attr("aria-label");
   $("header").html(generateHeader(page));
   $("nav").html(generateLinks(page));
   $("footer").html(generateFooter(page));
+  $(".dropdown-content").html(generateDropDown(page))
 
   $(window).scroll(function () {
     if (!navToggle) {
@@ -144,5 +154,12 @@ $(document).ready(function () {
     } else {
       openNav(page);
     }
+  });
+  $( "#product_modal" ).hover(function() {
+    $(".dropdown-content").css("display", "block");
+  });
+
+  $( ".dropDown-element" ).on("click",function() {
+    $(".dropdown-content").css("display", "none");
   });
 });
