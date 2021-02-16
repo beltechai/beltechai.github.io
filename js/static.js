@@ -147,14 +147,14 @@ function generateDropDown(page){
   <ul id="sc-1">
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#garbage-tracking">Garbage tracking</a></li>
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#public-infrastructure">Public infrastructure tracking</a></li> 
-  <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#smart-street">Smart Street Lights</a></li>
+  <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#street-light">Smart Street Lights</a></li>
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#wifi">WiFi for the city</a></li>
   </ul>
   <a class="dropDown-element" id="pt" href="${page == "home" ? "./public-transport" : "../public-transport"}">Public Transport</a>
   <ul id="pt-1">
   <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#smart-buses">Smart Buses</a></li>
   <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#smart-ticketing">Smart Ticketing</a></li> 
-  <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#public-transport">Public Transport Locator</a></li>
+  <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#public-transportation">Public Transport Locator</a></li>
   </ul>
   <a class="dropDown-element" href="${page == "home" ? "./public-transport" : "../public-transport"}"></a>
   `
