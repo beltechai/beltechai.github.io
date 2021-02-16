@@ -12,7 +12,7 @@ function generateLinks(page) {
         <div class="title">About</div>
       </a>
     </div>
-    <div class="link ${page == "products" ? "current" : ""}">
+    <div id="product_modal" class="link ${page == "products" ? "current" : ""}">
       <a href="${page == "home" ? "./" : "../"}#product">
         <div class="title">Product</div>
       </a>
