@@ -109,6 +109,8 @@ function headerScroll(page) {
 
 function openNav(page) {
   $("nav").css("display", "block");
+  $("nav").css("height", "100%");
+  $("nav").css("width", "100%");
   setTimeout(function () {
     $("nav").css("opacity", "1");
   }, 100);
@@ -118,6 +120,8 @@ function openNav(page) {
 
 function closeNav(page) {
   $("nav").css("opacity", "0");
+  $("nav").css("height", "0");
+  $("nav").css("width", "0");
   setTimeout(function () {
     $("nav").css("display", "none");
   }, 500);
