@@ -105,6 +105,10 @@ body {
   color: #1d2e47;
   font-size: 100%; }
 
+#tm-1,#sec-1,#sc-1,#pt-1 {
+  display: none;
+}
+
 a {
   color: inherit !important;
   text-decoration: none !important; }
@@ -128,11 +132,11 @@ a {
     display: none;
     position: fixed;
     background-color:#f9f9f994;
-    width: 200px;
+    width: 300px;
     box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
     z-index: 1;
     top: 10%;
-    right: 10%;
+    right: 4%;
   }
   
   .dropdown-content a {
