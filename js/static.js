@@ -12,9 +12,9 @@ function generateLinks(page) {
         <div class="title">About</div>
       </a>
     </div>
-    <div id="product_modal" class="link ${page == "products" ? "current" : ""}">
+    <div id="product_modal" onmouseup="mouseUp()" class="link ${page == "products" ? "current" : ""}">
       <a href="${page == "home" ? "./" : "../"}#product">
-        <div class="title">Product</div>
+        <div class="title dropdown">Product</div>
       </a>
     </div>
     <div class="link ${page == "team" ? "current" : ""}">
@@ -131,12 +131,37 @@ function closeNav(page) {
 }
 
 function generateDropDown(page){
-  const dropDownList = `<a class="dropDown-element" href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}">Traffic Mangement</a>
-  <a class="dropDown-element"  href="${page == "home" ? "./security" : "../security"}">Security</a>
-  <a class="dropDown-element"  href="${page == "home" ? "./smart-city" : "../smart-city"}">Smart City</a>
-  <a class="dropDown-element" href="${page == "home" ? "./public-transport" : "../public-transport"}">Public Transport</a>`
+  const dropDownList = `
+  <a class="dropDown-element" id="tm" href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}">Traffic Mangement</a>
+  <ul id="tm-1">
+  <li><a href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}">Smart Traffic Management</a></li>
+  <li><a href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}">Traffic Violation Detection</a></li>
+  </ul>
+  <a class="dropDown-element" id="sec"  href="${page == "home" ? "./security" : "../security"}">Security</a>
+  <ul id="sec-1">
+  <li><a href="${page == "home" ? "./security" : "../security"}">Crime Detection</a></li>
+  <li><a href="${page == "home" ? "./security" : "../security"}">Tracking of Suspected Criminals</a></li> 
+  <li><a href="${page == "home" ? "./security" : "../security"}">Women Safety </a></li>
+  </ul>
+  <a class="dropDown-element" id="sc" href="${page == "home" ? "./smart-city" : "../smart-city"}">Smart City</a>
+  <ul id="sc-1">
+  <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}">Garbage tracking</a></li>
+  <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}">Public infrastructure tracking</a></li> 
+  <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}">Smart Street Lights</a></li>
+  <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}">WiFi for the city</a></li>
+  </ul>
+  <a class="dropDown-element" id="pt" href="${page == "home" ? "./public-transport" : "../public-transport"}">Public Transport</a>
+  <ul id="pt-1">
+  <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}">Smart Buses</a></li>
+  <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}">Smart Ticketing</a></li> 
+  <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}">Public Transport Locator</a></li>
+  </ul>`
 
   return dropDownList;
+}
+
+function mouseUp() {
+  console.log("mouseup")
 }
 
 $(document).ready(function () {
@@ -159,11 +184,49 @@ $(document).ready(function () {
       openNav(page);
     }
   });
+
   $( "#product_modal" ).hover(function() {
     $(".dropdown-content").css("display", "block");
   });
 
+  $( "#tm" ).hover(function() {
+    $("#tm-1").css("display", "block");
+    $("#sec-1").css("display", "none");
+    $("#sc-1").css("display", "none");
+    $("#pt-1").css("display", "none");
+  });
+
+  $( "#sec" ).hover(function() {
+    $("#tm-1").css("display", "none");
+    $("#sec-1").css("display", "block");
+    $("#sc-1").css("display", "none");
+    $("#pt-1").css("display", "none");
+  });
+
+  $( "#sc" ).hover(function() {
+    $("#tm-1").css("display", "none");
+    $("#sec-1").css("display", "none");
+    $("#sc-1").css("display", "block");
+    $("#pt-1").css("display", "none");
+  });
+
+  $( "#pt" ).hover(function() {
+    $("#tm-1").css("display", "none");
+    $("#sec-1").css("display", "none");
+    $("#sc-1").css("display", "none");
+    $("#pt-1").css("display", "block");
+  });
+
   $( ".dropDown-element" ).on("click",function() {
     $(".dropdown-content").css("display", "none");
+  });
+
+  $( ".dropdown-content" ).hover(function() {
+    },function() {
+       $(".dropdown-content").css("display", "none");
+       $("#tm-1").css("display", "none");
+       $("#sec-1").css("display", "none");
+       $("#sc-1").css("display", "none");
+       $("#pt-1").css("display", "none");
   });
 });
