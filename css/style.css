@@ -205,7 +205,7 @@ header {
     pointer-events: all; }
     header .links .link {
       position: relative;
-      padding: 5px 0px;
+      padding: 40px 0px;
       cursor: pointer;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
