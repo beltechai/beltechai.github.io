@@ -189,6 +189,8 @@ $(document).ready(function () {
 
   $( "#product_modal" ).hover(function() {
     $(".dropdown-content").css("display", "block");
+  },function() {
+    $(".dropdown-content").css("display", "none");
   });
 
   $( "#tm" ).hover(function() {
@@ -224,6 +226,7 @@ $(document).ready(function () {
   });
 
   $( ".dropdown-content" ).hover(function() {
+     $(".dropdown-content").css("display", "block");
     },function() {
        $(".dropdown-content").css("display", "none");
        $("#tm-1").css("display", "none");
