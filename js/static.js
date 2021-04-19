@@ -132,31 +132,31 @@ function closeNav(page) {
 
 function generateDropDown(page){
   const dropDownList = `
-  <a class="dropDown-element" id="tm" href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}">Traffic Mangement</a>
+  <a class="dropDown-element" id="tm">Traffic Mangement</a>
   <ul id="tm-1">
   <li><a href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}#traffic-management">Smart Traffic Management</a></li>
   <li><a href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}#traffic-violation">Traffic Violation Detection</a></li>
   </ul>
-  <a class="dropDown-element" id="sec"  href="${page == "home" ? "./security" : "../security"}">Security</a>
+  <a class="dropDown-element" id="sec">Security</a>
   <ul id="sec-1">
   <li><a href="${page == "home" ? "./security" : "../security"}#crime-detection">Crime Detection</a></li>
   <li><a href="${page == "home" ? "./security" : "../security"}#tracking-suspected-criminals">Tracking of Suspected Criminals</a></li> 
   <li><a href="${page == "home" ? "./security" : "../security"}#women-safety">Women Safety </a></li>
   </ul>
-  <a class="dropDown-element" id="sc" href="${page == "home" ? "./smart-city" : "../smart-city"}">Smart City</a>
+  <a class="dropDown-element" id="sc">Smart City</a>
   <ul id="sc-1">
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#garbage-tracking">Garbage tracking</a></li>
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#public-infrastructure">Public infrastructure tracking</a></li> 
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#street-light">Smart Street Lights</a></li>
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#wifi">WiFi for the city</a></li>
   </ul>
-  <a class="dropDown-element" id="pt" href="${page == "home" ? "./public-transport" : "../public-transport"}">Public Transport</a>
+  <a class="dropDown-element" id="pt">Public Transport</a>
   <ul id="pt-1">
   <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#smart-buses">Smart Buses</a></li>
   <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#smart-ticketing">Smart Ticketing</a></li> 
   <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#public-transportation">Public Transport Locator</a></li>
   </ul>
-  <a class="dropDown-element" href="${page == "home" ? "./public-transport" : "../public-transport"}"></a>
+  <a class="dropDown-element"></a>
   `
 
   return dropDownList;
@@ -193,37 +193,57 @@ $(document).ready(function () {
     $(".dropdown-content").css("display", "none");
   });
 
-  $( "#tm" ).hover(function() {
-    $("#tm-1").css("display", "block");
+  $( "#tm" ).click(function() {
+    let x = document.getElementById("tm-1");
+    if (x.style.display === "none") {
+       x.style.display = "block";
+     } else {
+       x.style.display = "none";
+    }
     $("#sec-1").css("display", "none");
     $("#sc-1").css("display", "none");
     $("#pt-1").css("display", "none");
   });
 
-  $( "#sec" ).hover(function() {
+  $( "#sec" ).click(function() {
+    let x = document.getElementById("sec-1");
+    if (x.style.display === "none") {
+       x.style.display = "block";
+     } else {
+       x.style.display = "none";
+    }
     $("#tm-1").css("display", "none");
-    $("#sec-1").css("display", "block");
     $("#sc-1").css("display", "none");
     $("#pt-1").css("display", "none");
   });
 
-  $( "#sc" ).hover(function() {
+  $( "#sc" ).click(function() {
+    let x = document.getElementById("sc-1");
+    if (x.style.display === "none") {
+       x.style.display = "block";
+     } else {
+       x.style.display = "none";
+    }
     $("#tm-1").css("display", "none");
     $("#sec-1").css("display", "none");
-    $("#sc-1").css("display", "block");
     $("#pt-1").css("display", "none");
   });
 
-  $( "#pt" ).hover(function() {
+  $( "#pt" ).click(function() {
+    let x = document.getElementById("pt-1");
+    if (x.style.display === "none") {
+       x.style.display = "block";
+     } else {
+       x.style.display = "none";
+    }
     $("#tm-1").css("display", "none");
     $("#sec-1").css("display", "none");
     $("#sc-1").css("display", "none");
-    $("#pt-1").css("display", "block");
   });
 
-  $( ".dropDown-element" ).on("click",function() {
-    $(".dropdown-content").css("display", "none");
-  });
+  // $( ".dropDown-element" ).on("click",function() {
+  //   $(".dropdown-content").css("display", "none");
+  // });
 
   $( ".dropdown-content" ).hover(function() {
      $(".dropdown-content").css("display", "block");
