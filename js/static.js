@@ -12,7 +12,7 @@ function generateLinks(page) {
         <div class="title">About</div>
       </a>
     </div>
-    <div id="product_modal" onmouseup="mouseUp()" class="link ${page == "products" ? "current" : ""}">
+    <div id="product_modal" class="link ${page == "products" ? "current" : ""}">
       <a href="${page == "home" ? "./" : "../"}#product">
         <div class="title dropdown">Product</div>
       </a>
@@ -132,25 +132,25 @@ function closeNav(page) {
 
 function generateDropDown(page){
   const dropDownList = `
-  <a class="dropDown-element" id="tm">Traffic Mangement</a>
+  <a class="dropDown-element" id="tm">Traffic Mangement <i class="fas fa-caret-down"></i><i class="fas fa-caret-up"></i></a>
   <ul id="tm-1">
   <li><a href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}#traffic-management">Smart Traffic Management</a></li>
   <li><a href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}#traffic-violation">Traffic Violation Detection</a></li>
   </ul>
-  <a class="dropDown-element" id="sec">Security</a>
+  <a class="dropDown-element" id="sec">Security <i class="fas fa-caret-down"></i><i class="fas fa-caret-up"></i></a>
   <ul id="sec-1">
   <li><a href="${page == "home" ? "./security" : "../security"}#crime-detection">Crime Detection</a></li>
   <li><a href="${page == "home" ? "./security" : "../security"}#tracking-suspected-criminals">Tracking of Suspected Criminals</a></li> 
   <li><a href="${page == "home" ? "./security" : "../security"}#women-safety">Women Safety </a></li>
   </ul>
-  <a class="dropDown-element" id="sc">Smart City</a>
+  <a class="dropDown-element" id="sc">Smart City <i class="fas fa-caret-down"></i><i class="fas fa-caret-up"></i></a>
   <ul id="sc-1">
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#garbage-tracking">Garbage tracking</a></li>
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#public-infrastructure">Public infrastructure tracking</a></li> 
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#street-light">Smart Street Lights</a></li>
   <li><a href="${page == "home" ? "./smart-city" : "../smart-city"}#wifi">WiFi for the city</a></li>
   </ul>
-  <a class="dropDown-element" id="pt">Public Transport</a>
+  <a class="dropDown-element" id="pt">Public Transport <i class="fas fa-caret-down"></i><i class="fas fa-caret-up"></i></a>
   <ul id="pt-1">
   <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#smart-buses">Smart Buses</a></li>
   <li><a href="${page == "home" ? "./public-transport" : "../public-transport"}#smart-ticketing">Smart Ticketing</a></li> 
@@ -162,9 +162,6 @@ function generateDropDown(page){
   return dropDownList;
 }
 
-function mouseUp() {
-  console.log("mouseup")
-}
 
 $(document).ready(function () {
   const page = $("header").attr("aria-label");
@@ -187,6 +184,8 @@ $(document).ready(function () {
     }
   });
 
+  $(".fa-caret-up").css("display", "none");
+
   $( "#product_modal" ).hover(function() {
     $(".dropdown-content").css("display", "block");
   },function() {
@@ -197,8 +196,12 @@ $(document).ready(function () {
     let x = document.getElementById("tm-1");
     if (x.style.display === "none") {
        x.style.display = "block";
+       $("#tm .fa-caret-up").css("display", "inline");
+       $("#tm .fa-caret-down").css("display", "none");
      } else {
        x.style.display = "none";
+       $("#tm .fa-caret-down").css("display", "inline");
+       $("#tm .fa-caret-up").css("display", "none");
     }
     $("#sec-1").css("display", "none");
     $("#sc-1").css("display", "none");
@@ -209,8 +212,12 @@ $(document).ready(function () {
     let x = document.getElementById("sec-1");
     if (x.style.display === "none") {
        x.style.display = "block";
+       $("#sec .fa-caret-up").css("display", "inline");
+       $("#sec .fa-caret-down").css("display", "none");
      } else {
        x.style.display = "none";
+       $("#sec .fa-caret-down").css("display", "inline");
+       $("#sec .fa-caret-up").css("display", "none");
     }
     $("#tm-1").css("display", "none");
     $("#sc-1").css("display", "none");
@@ -221,8 +228,12 @@ $(document).ready(function () {
     let x = document.getElementById("sc-1");
     if (x.style.display === "none") {
        x.style.display = "block";
+       $("#sc .fa-caret-up").css("display", "inline");
+       $("#sc .fa-caret-down").css("display", "none");
      } else {
        x.style.display = "none";
+       $("#sc .fa-caret-down").css("display", "inline");
+       $("#sc .fa-caret-up").css("display", "none");
     }
     $("#tm-1").css("display", "none");
     $("#sec-1").css("display", "none");
@@ -233,8 +244,12 @@ $(document).ready(function () {
     let x = document.getElementById("pt-1");
     if (x.style.display === "none") {
        x.style.display = "block";
+       $("#pt .fa-caret-up").css("display", "inline");
+       $("#pt .fa-caret-down").css("display", "none");
      } else {
        x.style.display = "none";
+       $("#pt .fa-caret-down").css("display", "inline");
+       $("#pt .fa-caret-up").css("display", "none");
     }
     $("#tm-1").css("display", "none");
     $("#sec-1").css("display", "none");
