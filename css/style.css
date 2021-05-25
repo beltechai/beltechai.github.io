@@ -684,7 +684,7 @@ button:hover:after {
 
 p {
   font-family: "Gotu", sans-serif;
-  color: #58788c;
+  color: #c4c7c8;
   line-height: 1.75rem;
   font-size: 1rem; }
   p a {
@@ -928,7 +928,7 @@ input.search-box {
   border-radius: 4px;
   font-family: "Gotu", sans-serif;
   outline: none;
-  color: #58788c;
+  color: #c4c7c8;
   -webkit-appearance: none; }
 
 input.search-box:focus {
@@ -1073,7 +1073,7 @@ p.social-links a:hover {
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease; }
   .team-pop-up .close-button:hover {
-    color: #58788c; }
+    color: #c4c7c8; }
   .team-pop-up .content-lg,
   .team-pop-up .content-home-lg,
   .team-pop-up .content-about-lg {
