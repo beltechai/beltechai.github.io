@@ -600,6 +600,12 @@ h6 {
 .margintb5{
   margin: 5rem 0;
 }
+.light-text{
+  color: #ffffff !important;
+}
+.gray-text{
+  color: #a0a0a0 !important;
+}
 .highlight {
   color: #f58706 !important; }
 
