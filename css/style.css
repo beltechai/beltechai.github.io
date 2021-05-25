@@ -102,7 +102,7 @@ body {
   margin: 0px;
   font-family: "Spartan", sans-serif;
   background-color: #fff;
-  color: #fff;
+  color: #fff !important;
   font-size: 100%; }
 
 #tm-1,#sec-1,#sc-1,#pt-1 {
