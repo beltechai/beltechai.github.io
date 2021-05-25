@@ -343,7 +343,7 @@ header {
 
 header.min {
   height: 70px;
-  background: #133d51 !important;
+  background: #191d24 !important;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important;
   box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important; }
   header.min .logo {
@@ -748,7 +748,7 @@ p {
 footer {
   padding: 50px 0px;
   padding-bottom: 15px;
-  background: #133d51; }
+  background: #191d24; }
   footer p.sm {
     color: #b0bdca;
     font-size: 10px;
