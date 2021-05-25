@@ -102,7 +102,7 @@ body {
   margin: 0px;
   font-family: "Spartan", sans-serif;
   background-color: #fff;
-  color: #fff !important;
+  color: #1d2e47;
   font-size: 100%; }
 
 #tm-1,#sec-1,#sc-1,#pt-1 {
@@ -343,7 +343,7 @@ header {
 
 header.min {
   height: 70px;
-  background: #191d24 !important;
+  background: #133d51 !important;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important;
   box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important; }
   header.min .logo {
@@ -415,7 +415,7 @@ nav {
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
-        background: ; }
+        background: #ebf0f3; }
       nav .links .link .menu-item {
         font-family: "Gotu", sans-serif;
         font-weight: 400;
@@ -475,7 +475,7 @@ section.home-bg {
   background-position: center bottom; }
 
 section.intro {
-  padding-top: 10% !important;
+  padding-top: 18% !important;
   padding-bottom: calc(100px + 0px) !important; }
 
 section.add-space-bottom {
@@ -618,7 +618,7 @@ h6 {
 
 button {
   position: relative;
-  background: #2f90e7;
+  background: #58d1e3;
   padding: 14px 24px;
   margin: 10px !important;
   cursor: pointer;
@@ -674,7 +674,7 @@ button:hover:after {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(216, 216, 216, 0.2) !important;
     transition: 0.3s;
-    background: #191d24 !important;
+    background: #f5f9fc !important;
   }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
@@ -684,7 +684,7 @@ button:hover:after {
 
 p {
   font-family: "Gotu", sans-serif;
-  color: #c4c7c8;
+  color: #58788c;
   line-height: 1.75rem;
   font-size: 1rem; }
   p a {
@@ -734,7 +734,7 @@ p {
 
 .vision-image,
 .journey-image {
-  background: #191d24;
+  background: #ebf0f3;
   height: 100%;
   width: 100%; }
 
@@ -743,12 +743,12 @@ p {
   background-size: cover; }
 
 .vision-split .split {
-  background-color: #191d24; }
+  background-color: #ebf0f3; }
 
 footer {
   padding: 50px 0px;
   padding-bottom: 15px;
-  background: #191d24; }
+  background: #133d51; }
   footer p.sm {
     color: #b0bdca;
     font-size: 10px;
@@ -844,10 +844,10 @@ footer {
       text-align: center; }
 
 section.grey {
-  background: #191d24; }
+  background: #ebf0f3; }
 
 section.dark .info-wrapper .info-tile .title {
-  color: #ffffff !important; 
+  color: #1d233a !important; 
 }
 
 /* PRODUCTS */
@@ -902,7 +902,7 @@ img.full-width {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background: #191d24;
+    background: #ebf0f3;
     margin: 25px; }
     .features-wrapper .circle-image img {
       width: 100%;
@@ -924,11 +924,11 @@ input.search-box {
   width: calc(100% - 30px);
   padding: 15px;
   margin: 5px 0px;
-  border: 1px solid #191d24;
+  border: 1px solid #ebf0f3;
   border-radius: 4px;
   font-family: "Gotu", sans-serif;
   outline: none;
-  color: #c4c7c8;
+  color: #58788c;
   -webkit-appearance: none; }
 
 input.search-box:focus {
@@ -937,7 +937,7 @@ input.search-box:focus {
 .careers-wrapper .career {
   width: 100%;
   padding: 20px 0px;
-  border-bottom: 1px solid #191d24; }
+  border-bottom: 1px solid #ebf0f3; }
   .careers-wrapper .career p {
     font-size: 0.9rem;
     line-height: 1.75;
@@ -968,7 +968,7 @@ input.search-box:focus {
     height: calc(320px - 40px);
     padding: 20px;
     padding-bottom: 40px;
-    border: 1px solid #191d24;
+    border: 1px solid #ebf0f3;
     border-radius: 4px;
     margin: 20px;
     cursor: pointer; }
@@ -976,7 +976,7 @@ input.search-box:focus {
       position: relative;
       width: 100px;
       height: 100px;
-      background: #191d24;
+      background: #ebf0f3;
       border-radius: 100%;
       margin: 20px auto;
       overflow: hidden; }
@@ -1145,7 +1145,7 @@ p.social-links a:hover {
   section {
     padding: 70px 0px; }
   section.intro {
-    padding-top: 10% !important; }
+    padding-top: 18% !important; }
   section.add-space-bottom {
     padding-bottom: 22%  !important; }
   section.fix-space-bottom {
@@ -1217,7 +1217,7 @@ p.social-links a:hover {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    background: #191d24;
+    background: #ebf0f3;
     margin: 25px; }
   .features-wrapper .feature {
     width: calc(100% - 230px);
@@ -1240,7 +1240,7 @@ p.social-links a:hover {
   section {
     padding: 50px 0px; }
   section.intro {
-    padding-top: 10% !important; }
+    padding-top: 18% !important; }
   section.add-space-bottom {
     padding-bottom: 22% !important; }
   section.fix-space-bottom {
