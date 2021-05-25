@@ -45,8 +45,7 @@ function generateHeader(page) {
     </div>
     ` +
     generateLinks(page) +
-    `
-        <div class="hamburger">
+    `<div class="hamburger">
             <div class="line-1"></div>
             <div class="line-2"></div>
         </div>
@@ -256,10 +255,6 @@ $(document).ready(function () {
     $("#sc-1").css("display", "none");
   });
 
-  // $( ".dropDown-element" ).on("click",function() {
-  //   $(".dropdown-content").css("display", "none");
-  // });
-
   $( ".dropdown-content" ).hover(function() {
      $(".dropdown-content").css("display", "block");
     },function() {
@@ -268,5 +263,5 @@ $(document).ready(function () {
        $("#sec-1").css("display", "none");
        $("#sc-1").css("display", "none");
        $("#pt-1").css("display", "none");
-  });
+    });
 });
