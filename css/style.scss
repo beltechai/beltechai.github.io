@@ -9,7 +9,7 @@ $primary-color-highlight: rgb(82, 149, 250);
 $header-height: 100px;
 $dark: #000000;
 $text-dark: #ffffff;
-$text: #a8afb4;
+$text: #58788c;
 $text-light: #b0bdca;
 
 @mixin transition($time) {
@@ -108,7 +108,7 @@ body {
   margin: 0px;
   font-family: $primary-font;
   background-color: #fff;
-  color: #fff !important;
+  color: $text-dark;
   font-size: 100%;
 }
 
