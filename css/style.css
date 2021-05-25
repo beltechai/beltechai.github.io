@@ -618,7 +618,7 @@ h6 {
 
 button {
   position: relative;
-  background: #2f90e7;
+  background: #00d25b;
   padding: 14px 24px;
   margin: 10px !important;
   cursor: pointer;
@@ -1298,7 +1298,7 @@ p.social-links a:hover {
       width: 150px;
       height: 150px;
       border-radius: 100%;
-      background: #191d24;
+      background: #ebf0f3;
       margin: 25px auto; }
     .features-wrapper .feature {
       width: 100%;
