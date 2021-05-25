@@ -415,7 +415,7 @@ nav {
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
-        background: #191d24; }
+        background: #b5b5b6; }
       nav .links .link .menu-item {
         font-family: "Gotu", sans-serif;
         font-weight: 400;
@@ -844,7 +844,7 @@ footer {
       text-align: center; }
 
 section.grey {
-  background: #191d24; }
+  background: #b5b5b6; }
 
 section.dark .info-wrapper .info-tile .title {
   color: #1d233a !important; 
@@ -937,7 +937,7 @@ input.search-box:focus {
 .careers-wrapper .career {
   width: 100%;
   padding: 20px 0px;
-  border-bottom: 1px solid #191d24; }
+  border-bottom: 1px solid #b5b5b6; }
   .careers-wrapper .career p {
     font-size: 0.9rem;
     line-height: 1.75;
@@ -968,7 +968,7 @@ input.search-box:focus {
     height: calc(320px - 40px);
     padding: 20px;
     padding-bottom: 40px;
-    border: 1px solid #191d24;
+    border: 1px solid #b5b5b6;
     border-radius: 4px;
     margin: 20px;
     cursor: pointer; }
@@ -976,7 +976,7 @@ input.search-box:focus {
       position: relative;
       width: 100px;
       height: 100px;
-      background: #191d24;
+      background: #b5b5b6;
       border-radius: 100%;
       margin: 20px auto;
       overflow: hidden; }
