@@ -415,7 +415,7 @@ nav {
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
-        background: #ebf0f3; }
+        background: #191d24; }
       nav .links .link .menu-item {
         font-family: "Gotu", sans-serif;
         font-weight: 400;
@@ -646,8 +646,8 @@ button.margin-fix {
   margin-left: 0px; }
 
 button.secondary {
-  /* background: #ebf0f3; */
-  color: #1d2e47; }
+  /* background: #191d24; */
+  color: #191d24; }
 
 button.color {
   background: #f58706; }
@@ -734,7 +734,7 @@ p {
 
 .vision-image,
 .journey-image {
-  background: #ebf0f3;
+  background: #191d24;
   height: 100%;
   width: 100%; }
 
@@ -743,7 +743,7 @@ p {
   background-size: cover; }
 
 .vision-split .split {
-  background-color: #ebf0f3; }
+  background-color: #191d24; }
 
 footer {
   padding: 50px 0px;
@@ -844,7 +844,7 @@ footer {
       text-align: center; }
 
 section.grey {
-  background: #ebf0f3; }
+  background: #191d24; }
 
 section.dark .info-wrapper .info-tile .title {
   color: #1d233a !important; 
@@ -902,7 +902,7 @@ img.full-width {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background: #ebf0f3;
+    background: #191d24;
     margin: 25px; }
     .features-wrapper .circle-image img {
       width: 100%;
@@ -924,7 +924,7 @@ input.search-box {
   width: calc(100% - 30px);
   padding: 15px;
   margin: 5px 0px;
-  border: 1px solid #ebf0f3;
+  border: 1px solid #191d24;
   border-radius: 4px;
   font-family: "Gotu", sans-serif;
   outline: none;
@@ -937,7 +937,7 @@ input.search-box:focus {
 .careers-wrapper .career {
   width: 100%;
   padding: 20px 0px;
-  border-bottom: 1px solid #ebf0f3; }
+  border-bottom: 1px solid #191d24; }
   .careers-wrapper .career p {
     font-size: 0.9rem;
     line-height: 1.75;
@@ -968,7 +968,7 @@ input.search-box:focus {
     height: calc(320px - 40px);
     padding: 20px;
     padding-bottom: 40px;
-    border: 1px solid #ebf0f3;
+    border: 1px solid #191d24;
     border-radius: 4px;
     margin: 20px;
     cursor: pointer; }
@@ -976,7 +976,7 @@ input.search-box:focus {
       position: relative;
       width: 100px;
       height: 100px;
-      background: #ebf0f3;
+      background: #191d24;
       border-radius: 100%;
       margin: 20px auto;
       overflow: hidden; }
@@ -1217,7 +1217,7 @@ p.social-links a:hover {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    background: #ebf0f3;
+    background: #191d24;
     margin: 25px; }
   .features-wrapper .feature {
     width: calc(100% - 230px);
@@ -1298,7 +1298,7 @@ p.social-links a:hover {
       width: 150px;
       height: 150px;
       border-radius: 100%;
-      background: #ebf0f3;
+      background: #191d24;
       margin: 25px auto; }
     .features-wrapper .feature {
       width: 100%;
