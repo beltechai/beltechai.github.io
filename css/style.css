@@ -1137,6 +1137,10 @@ p.social-links a:hover {
   .mr10{
     margin-right: 10rem;
   }
+  .building{
+    height: 40rem !important;
+    width:100% !important;
+  }
   .content, .content-home {
     width: 50%; }
   .content-md, .content-home-md{
@@ -1234,6 +1238,10 @@ p.social-links a:hover {
   .mr10{
     margin-right: 0rem;
   }  
+  .building{
+    height: 22rem !important;
+    width:100% !important;
+  }
   .content,
   .content-home,
   .content-about {
