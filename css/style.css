@@ -1138,8 +1138,8 @@ p.social-links a:hover {
     margin-right: 10rem;
   }
   .building{
-    height: 40rem !important;
-    width:100% !important;
+    height: 40rem;
+    width:100%;
   }
   .content, .content-home {
     width: 50%; }
