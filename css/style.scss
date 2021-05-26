@@ -167,6 +167,11 @@ header {
     height: 100%;
   }
 
+  .building{
+    height: 40rem;
+    width:100%;
+  }
+
   .logo {
     height: 80%;
     @include transition(0.4s);

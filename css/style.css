@@ -124,6 +124,11 @@ a {
   width:100%;
   }
 
+  .building{
+    height: 40rem;
+    width:100%;
+  }
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -1239,8 +1244,8 @@ p.social-links a:hover {
     margin-right: 0rem;
   }  
   .building{
-    height: 22rem !important;
-    width:100% !important;
+    height: 22rem;
+    width:100%;
   }
   .content,
   .content-home,
