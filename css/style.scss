@@ -1155,6 +1155,12 @@ p.social-links {
     height: 40rem;
     width:100%;
   }
+  .product-text .content-lg{
+    position: relative;
+    top: 10%;
+    transform: translate(0, 0%);
+    width: 90%;
+}
   .mr10{
     margin-right: 10rem;
   }
@@ -1304,6 +1310,12 @@ p.social-links {
   .content {
     width: 85%;
   }
+  .product-text .content-lg{
+    position: relative;
+    top: 10%;
+    transform: translate(0, 0%);
+    width: 90%;
+}
 
   button {
     margin: 5px !important;
@@ -1316,6 +1328,15 @@ p.social-links {
 
     .hamburger {
       display: block;
+    }
+  }
+
+  .product-text {
+    .content-lg {
+      position: relative;
+      top: 10%;
+      transform: translate(0, 0%);
+      width: 90%;
     }
   }
 

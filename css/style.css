@@ -1146,6 +1146,12 @@ p.social-links a:hover {
     height: 40rem;
     width:100%;
   }
+  .product-text .content-lg{
+    position: relative;
+    top: 10%;
+    transform: translate(0, 0%);
+    width: 90%;
+}
   .content, .content-home {
     width: 50%; }
   .content-md, .content-home-md{
