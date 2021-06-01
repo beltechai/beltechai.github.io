@@ -107,6 +107,8 @@ function headerScroll(page) {
 }
 
 function openNav(page) {
+  $(".line-1").css("background", "#000000");
+  $(".line-2").css("background", "#000000");
   $("nav").css("display", "block");
   $("nav").css("height", "100%");
   $("nav").css("width", "100%");
@@ -118,6 +120,8 @@ function openNav(page) {
 }
 
 function closeNav(page) {
+  $(".line-1").css("background", "#ffffff");
+  $(".line-2").css("background", "#ffffff");
   $("nav").css("opacity", "0");
   $("nav").css("height", "0");
   $("nav").css("width", "0");
