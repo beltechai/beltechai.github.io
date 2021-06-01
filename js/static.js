@@ -180,7 +180,7 @@ $(document).ready(function () {
   });
 
   $("nav").on("click", ".link", function () {
-     console.log("Clicked link")
+    $("nav").css("display", "none");
   });
 
 
