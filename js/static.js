@@ -180,9 +180,11 @@ $(document).ready(function () {
   });
 
   $("nav").on("click", ".link", function () {
-    $(".line-1").css("background", "#ffffff");
-    $(".line-2").css("background", "#ffffff");
-    $("nav").css("display", "none");
+    if (navToggle) {
+      closeNav(page);
+    } else {
+      openNav(page);
+    }
   });
 
 
