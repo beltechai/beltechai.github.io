@@ -179,6 +179,11 @@ $(document).ready(function () {
     }
   });
 
+  $("nav").on("click", ".link", function () {
+     console.log("Clicked link")
+  });
+
+
   $("header").on("click", ".hamburger", function () {
     if (navToggle) {
       closeNav(page);

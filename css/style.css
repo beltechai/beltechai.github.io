@@ -980,7 +980,7 @@ input.search-box:focus {
     padding: 20px;
     padding-bottom: 40px;
     border: 1px solid #b5b5b6;
-    background: radial-gradient(#c9c9c9, transparent);
+    background: radial-gradient(#ffffff,#c9c9c9);
     border-radius: 4px;
     margin: 20px;
     cursor: pointer; }
