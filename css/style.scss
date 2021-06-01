@@ -641,7 +641,7 @@ button:hover:after {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(216, 216, 216, 0.2) !important;
   transition: 0.3s;
-  background: linear-gradient(180deg, #ffffff, transparent) !important;
+  background: linear-gradient(180deg, #ffffff, #888888) !important;
 }
 /* On mouse-over, add a deeper shadow */
 .card:hover {
