@@ -121,6 +121,7 @@ function closeNav(page) {
   $("nav").css("opacity", "0");
   $("nav").css("height", "0");
   $("nav").css("width", "0");
+  $("nav").css("display", "none");
   setTimeout(function () {
     $("nav").css("display", "none");
   }, 500);
