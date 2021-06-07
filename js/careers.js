@@ -5,25 +5,25 @@ function generateCareerElem(data) {
         <b>Key problem to solve</b>
       </p>
       <p>
-        ${data.Problem}
+        ${data.Responsibilities}
       </p>
       <p>
         <b>Method</b>
       </p>
       <p>
-        ${data.Method}
+        ${data.MustHave}
       </p>
       <p>
         <b>Technical Expertise</b>
       </p>
       <p>
-        ${data.Technical}
+        ${data.NicetoHave}
       </p>
       <p>
         <b>Basic Knowledge</b>
       </p>
       <p>
-        ${data.Knowledge}
+        ${data.Link}
       </p>
       <p class="sm">Posted on ${data.Posted}</p>
       <a href="../apply" target="_blank">
