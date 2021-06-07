@@ -3,19 +3,19 @@ function generateCareerElem(data) {
   return `<div class="career">
       <h6 class="margins">${data.Position}</h6>
       <p>
-        <b>Key problem to solve</b>
+        <b>Responsibilities</b>
       </p>
       <p>
         ${data.Responsibilities}
       </p>
       <p>
-        <b>Method</b>
+        <b>Must Have</b>
       </p>
       <p>
         ${data.MustHave}
       </p>
       <p>
-        <b>Technical Expertise</b>
+        <b>Nice to Have</b>
       </p>
       <p>
         ${data.NicetoHave}
@@ -45,9 +45,7 @@ function fillCareers(arr) {
 $(document).ready(function () {
   var data;
   jQuery.get("careers.csv", (csv) => {
-    
     data = $.csv.toObjects(csv);
-    console.log("csv " +data)
     fillCareers(data);
     $("input.search-box").keyup(function (e) {
       q = $("input.search-box").val().toLowerCase();
