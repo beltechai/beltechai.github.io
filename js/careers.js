@@ -21,7 +21,7 @@ function generateCareerElem(data) {
         ${data.NicetoHave}
       </p>
       <p>
-        <b>Basic Knowledge</b>
+        <b>Link</b>
       </p>
       <p>
         ${data.Link}
