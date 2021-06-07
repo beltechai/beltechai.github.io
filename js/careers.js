@@ -20,12 +20,6 @@ function generateCareerElem(data) {
       <p>
         ${data.NicetoHave}
       </p>
-      <p>
-        <b>Link</b>
-      </p>
-      <p>
-        ${data.Link}
-      </p>
       <p class="sm">Posted on ${data.Posted}</p>
       <a href="../apply" target="_blank">
       <button class="secondary margin-fix">
