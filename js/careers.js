@@ -45,8 +45,9 @@ function fillCareers(arr) {
 $(document).ready(function () {
   var data;
   jQuery.get("careers.csv", (csv) => {
-    console.log("csv " +csv)
-    var data = $.csv.toObjects(csv);
+    
+    data = $.csv.toObjects(csv);
+    console.log("csv " +data)
     fillCareers(data);
     $("input.search-box").keyup(function (e) {
       q = $("input.search-box").val().toLowerCase();
