@@ -87,6 +87,14 @@ $text-light: #b0bdca;
   }
 }
 
+.companyname{
+  color: #ffffff;
+  font-weight: 600;
+  position: absolute;
+  top: 50px;
+  font-size: 20px;
+}
+
 .filler {
   stroke-dasharray: 0, 0;
   stroke-linecap: round;
@@ -334,6 +342,14 @@ header.min {
   height: 70px;
   background: #191d24 !important;
   box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important;
+
+  header.min .companyname{
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    top: 35px;
+    font-size: 20px;
+  }
 
   .logo {
     height: 100%;

@@ -41,7 +41,7 @@ function generateHeader(page) {
     `<div class="content-lg">
     <div class="logo">
     <a href="${page == "home" ? "./" : "../"}"><img style="height: 50px;" src="${page == "home" ? "./" : "../"
-    }img/apple-touch-icon.png" alt="Beltech Logo" /><span style="color: #ffffff;font-weight: 600;position: absolute;top: 50px;font-size: 20px;">Beltech AI</span></a>
+    }img/apple-touch-icon.png" alt="Beltech Logo" /><span class="companyname">Beltech AI</span></a>
     </div>
     ` +
     generateLinks(page) +

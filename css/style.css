@@ -120,6 +120,14 @@ a {
 /* header.force-white {
   background: #fff !important; } */
 
+  .companyname{
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+  }
+
   video{
   width:100%;
   }
@@ -353,6 +361,14 @@ header.min {
   box-shadow: 0 0 0 0.2rem rgba(23, 37, 58, 0.1) !important; }
   header.min .logo {
     height: 100%; }
+
+  header.min .companyname{
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    top: 35px;
+    font-size: 20px;
+  }
 
     .row {
       display: flex;
