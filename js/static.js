@@ -135,6 +135,7 @@ function closeNav(page) {
 
 function generateDropDown(page){
   const dropDownList = `
+  <a class="dropDown-element"></a>
   <a class="dropDown-element" id="tm">Traffic Mangement <i class="fas fa-caret-down"></i><i class="fas fa-caret-up"></i></a>
   <ul id="tm-1">
   <li><a href="${page == "home" ? "./traffic-mangement" : "../traffic-mangement"}#traffic-management">Smart Traffic Management</a></li>
