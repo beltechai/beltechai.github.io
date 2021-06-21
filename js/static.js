@@ -40,8 +40,8 @@ function generateHeader(page) {
   const headerHTML =
     `<div class="content-lg">
     <div class="logo">
-    <a href="${page == "home" ? "./" : "../"}"><img src="${page == "home" ? "./" : "../"
-    }img/Logo.svg" alt="Beltech Logo" /></a>
+    <a href="${page == "home" ? "./" : "../"}"><img style="height: 50px;" src="${page == "home" ? "./" : "../"
+    }img/apple-touch-icon.png" alt="Beltech Logo" /><span style="color: #ffffff;font-weight: 600;position: absolute;top: 50px;font-size: 20px;">Beltech AI</span></a>
     </div>
     ` +
     generateLinks(page) +
