@@ -14,7 +14,7 @@ function generateLinks(page) {
     </div>
     <div id="product_modal" class="link ${page == "products" ? "current" : ""}">
       <a href="${page == "home" ? "./" : "../"}#product">
-        <div class="title dropdown">Product</div>
+        <div class="title dropdown">Products</div>
       </a>
     </div>
     <div class="link ${page == "team" ? "current" : ""}">
@@ -89,7 +89,7 @@ function generateFooter(page) {
   </div>
   </div>
   <p class="sm">
-    &copy; Copyright Beltech Green Pvt. Ltd. 2021
+    &copy; Copyright Beltech AI Pvt. Ltd. 2021
   </p>
 </div>`;
   return footerHTML;
