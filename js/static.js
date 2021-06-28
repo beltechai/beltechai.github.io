@@ -89,7 +89,7 @@ function generateFooter(page) {
   </div>
   </div>
   <p class="sm">
-    &copy; Copyright Beltech AI Pvt. Ltd. 2021
+    &copy; Copyright Beltech Artificial Intelligence Pvt. Ltd. 2021
   </p>
 </div>`;
   return footerHTML;
