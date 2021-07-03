@@ -491,7 +491,7 @@ section.light-grey {
   background: #f5f9fc; }
 
 section.home-bg {
-  background: url("../img/Back.png");
+/*   background: url("../img/Back.png"); */
   background-size: cover;
   background-position: center bottom; }
 
