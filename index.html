@@ -275,7 +275,7 @@
     function fillCareers(arr) {
       $(".team-wrapper").html("");
       arr.map((doc, index) => {
-        if (index <= 7) {
+        if (index <= 5) {
           $(".team-wrapper").append(generateCareerElem(doc, index));
         }
       });
