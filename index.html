@@ -83,6 +83,11 @@
   </section>
   <section class="grey fix-space-bottom fix-space-top">
     <h3 class="center margins light-text">Our Advisors</h3>
+    <div class="content-lg">
+      <div class="info-wrapper" id="advisor">
+    
+      </div>
+    </div>
     <div id="product"></div>
   </section>
   <section  class="dark dark-color fix-space-bottom fix-space-top">
@@ -245,6 +250,17 @@
   </div>`;
     }
 
+    function generateAdvisorElem(data, index) {
+      return `    <div class="card info-tile" 
+        style="background: black !important;padding: 0 !important;
+        height: 25rem;width: 20%;">
+           <img src="./advisor/${data.ImagePath}" style="width: 100%;"/><br/>
+           <h4 style="color:gray;">${data.Name}</h4><br/>
+           <h6 style="color:gray;">${data.Position}</h6><br/>
+           <p style="text-align:left !important;color:gray;">${data.Location}</p>
+        </div>`;
+    }
+
     function generatePopUp(data) {
       return `<div class="close-button"><i class="fas fa-times"></i></div>
   <div class="content-lg">
@@ -284,6 +300,14 @@
       });
     }
 
+    function fillAdvisor(arr) {
+      $("#advisor").html("");
+      arr.map((doc, index) => {
+          $(".advisor").append(generateAdvisorElem(doc, index));
+      });
+    }
+
+
     function openPopUp(doc) {
       $(".team-pop-up").removeClass("close");
       $(".black-screen").removeClass("close");
@@ -310,6 +334,11 @@
           $(".team-pop-up").addClass("close");
           $(".black-screen").addClass("close");
         });
+      });
+
+      jQuery.get("/advisor/advisor.csv", (csv) => {
+        data = $.csv.toObjects(csv);
+        fillAdvisor(data);
       });
     });
   </script>
