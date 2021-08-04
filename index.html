@@ -81,7 +81,7 @@
       </div>
     </div>
   </section>
-  <section class="grey fix-space-bottom fix-space-top">
+  <!-- <section class="grey fix-space-bottom fix-space-top">
     <h3 class="center margins light-text">Our Advisors</h3>
     <div class="content-lg">
       <div class="info-wrapper" id="advisor">
@@ -89,7 +89,7 @@
       </div>
     </div>
     <div id="product"></div>
-  </section>
+  </section> -->
   <section  class="dark dark-color fix-space-bottom fix-space-top">
     <h3 class="center margins">Our Products</h3>
     <div class="content-lg">
@@ -250,16 +250,16 @@
   </div>`;
     }
 
-    function generateAdvisorElem(data, index) {
-      return `    <div class="card info-tile" 
-        style="background: black !important;padding: 0 !important;
-        height: 23rem;width: 20%;">
-           <img src="./advisor/${data.ImagePath}" style="width: 100%;"/><br/>
-           <h2 style="color:#fff;text-align:center;">${data.Name}</h2><br/>
-           <h4 style="color:gray;text-align:center;">${data.Position}</h4><br/>
-           <p style="color:gray;text-align:center;">${data.Location}</p>
-        </div>`;
-    }
+    // function generateAdvisorElem(data, index) {
+    //   return `    <div class="card info-tile" 
+    //     style="background: black !important;padding: 0 !important;
+    //     height: 23rem;width: 20%;">
+    //        <img src="./advisor/${data.ImagePath}" style="width: 100%;"/><br/>
+    //        <h2 style="color:#fff;text-align:center;">${data.Name}</h2><br/>
+    //        <h4 style="color:gray;text-align:center;">${data.Position}</h4><br/>
+    //        <p style="color:gray;text-align:center;">${data.Location}</p>
+    //     </div>`;
+    // }
 
     function generatePopUp(data) {
       return `<div class="close-button"><i class="fas fa-times"></i></div>
@@ -300,12 +300,12 @@
       });
     }
 
-    function fillAdvisor(arr) {
-      $("#advisor").html("");
-      arr.map((doc, index) => {
-          $("#advisor").append(generateAdvisorElem(doc, index));
-      });
-    }
+    // function fillAdvisor(arr) {
+    //   $("#advisor").html("");
+    //   arr.map((doc, index) => {
+    //       $("#advisor").append(generateAdvisorElem(doc, index));
+    //   });
+    // }
 
 
     function openPopUp(doc) {
@@ -336,10 +336,10 @@
         });
       });
 
-      jQuery.get("/advisor/advisor.csv", (csv) => {
-        data = $.csv.toObjects(csv);
-        fillAdvisor(data);
-      });
+      // jQuery.get("/advisor/advisor.csv", (csv) => {
+      //   data = $.csv.toObjects(csv);
+      //   fillAdvisor(data);
+      // });
     });
   </script>
 </body>
