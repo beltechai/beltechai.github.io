@@ -303,7 +303,7 @@
     function fillAdvisor(arr) {
       $("#advisor").html("");
       arr.map((doc, index) => {
-          $(".advisor").append(generateAdvisorElem(doc, index));
+          $("#advisor").append(generateAdvisorElem(doc, index));
       });
     }
 
