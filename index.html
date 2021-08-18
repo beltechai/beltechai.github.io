@@ -77,20 +77,18 @@
           <video controls muted autoplay loop>
             <source src="https://traffic-light-videos.beltech.ai/beltech-product.mp4" type="video/mp4">
           </video>
-          <!-- <iframe class="full-width" height="350" src="https://www.youtube.com/embed/XINPVXV3XdI">
-          </iframe> -->
         </div>
       </div>
     </div>
   </section>
-  <!-- <section class="grey fix-space-bottom fix-space-top">
+  <section class="grey fix-space-bottom fix-space-top">
     <h3 class="center margins light-text">Our Advisors</h3>
     <div class="content-lg">
       <div class="info-wrapper" id="advisor">
       </div>
     </div>
     <div id="product"></div>
-  </section> -->
+  </section>
   <section class="dark dark-color fix-space-bottom fix-space-top">
     <h3 class="center margins">Our Products</h3>
     <div class="content-lg">
@@ -256,22 +254,22 @@
   </div>`;
     }
 
-    // function generateAdvisorElem(data, index) {
-    //   return `<div class="card info-tile" style="height:250px;background: transparent !important;padding: 0 !important;">
-    //        <img src="./advisor/${data.ImagePath}" style="width: 100%;height:100%;"/>
-    //        <div style="width: 100%;
-    //        height: 100%;
-    //        position: relative;
-    //        bottom: 254px;
-    //        background: linear-gradient(180deg, #ffffff30,#ffffff00, #191d24) !important;
-    //        ">
-    //       <div style="padding-top: 190px;">
-    //       <h5 style="color: white;text-align: center;">${data.Name}</h5>
-    //       <p style="color: orange;text-align: center;margin-top: 5px;">${data.Position}</p>
-    //       </div>
-    //       </div>
-    //     </div>`;
-    // }
+    function generateAdvisorElem(data, index) {
+      return `<div class="card info-tile" style="height:250px;background: transparent !important;padding: 0 !important;">
+           <img src="./advisor/${data.ImagePath}" style="width: 100%;height:100%;"/>
+           <div style="width: 100%;
+           height: 100%;
+           position: relative;
+           bottom: 254px;
+           background: linear-gradient(180deg, #ffffff30,#ffffff00, #191d24) !important;
+           ">
+          <div style="padding-top: 190px;">
+          <h5 style="color: white;text-align: center;">${data.Name}</h5>
+          <p style="color: orange;text-align: center;margin-top: 5px;">${data.Position}</p>
+          </div>
+          </div>
+        </div>`;
+    }
 
     function generatePopUp(data) {
       return `<div class="close-button"><i class="fas fa-times"></i></div>
@@ -312,12 +310,12 @@
       });
     }
 
-    // function fillAdvisor(arr) {
-    //   $("#advisor").html("");
-    //   arr.map((doc, index) => {
-    //       $("#advisor").append(generateAdvisorElem(doc, index));
-    //   });
-    // }
+    function fillAdvisor(arr) {
+      $("#advisor").html("");
+      arr.map((doc, index) => {
+          $("#advisor").append(generateAdvisorElem(doc, index));
+      });
+    }
 
 
     function openPopUp(doc) {
@@ -348,10 +346,10 @@
         });
       });
 
-      // jQuery.get("/advisor/advisor.csv", (csv) => {
-      //   data = $.csv.toObjects(csv);
-      //   fillAdvisor(data);
-      // });
+      jQuery.get("/advisor/advisor.csv", (csv) => {
+        data = $.csv.toObjects(csv);
+        fillAdvisor(data);
+      });
     });
   </script>
 </body>
