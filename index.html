@@ -250,7 +250,7 @@
       return `<div class="team-member" aria-label="${index}">
     <div class="photo"><img src="/team/${data.ImagePath}" alt="Team member image"/></div>
     <p class="lg">${data.Name}</p>
-    <p style="font-size:10px;">${data.Position}</p>
+    <p>${data.Position}</p>
   </div>`;
     }
 
@@ -265,7 +265,7 @@
            ">
           <div style="padding-top: 190px;">
           <h5 style="color: white;text-align: center;">${data.Name}</h5>
-          <p style="color: orange;text-align: center;margin-top: 5px;">${data.Position}</p>
+          <p style="color: orange;text-align: center;margin-top: 5px;font-size:10px;">${data.Position}</p>
           </div>
           </div>
         </div>`;
