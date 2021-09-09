@@ -18,7 +18,7 @@ function generateLinks(page) {
       </a>
     </div>
     <div class="link ${page == "team" ? "current" : ""}">
-      <a href="${page == "home" ? "./" : "../"}#team">
+      <a href="${page == "home" ? "./" : "../"}team">
         <div class="title">Team</div>
       </a>
     </div>
@@ -166,6 +166,21 @@ function generateDropDown(page){
   return dropDownList;
 }
 
+$(document).scroll(function () {
+  $('section').each(function () {
+      if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+          if($(this).attr('id') == "skill"){
+            myFunctionScroll()
+            $(document).off('scroll');
+          }
+      }
+  });
+});
+
+
+function myFunctionScroll(){
+  $('.counter-count').each(function(){$(this).prop('Counter',0).animate({Counter:$(this).text()},{duration:2000,easing:'swing',step:function(now){$(this).text(Math.ceil(now))}})})
+}
 
 $(document).ready(function () {
   const page = $("header").attr("aria-label");
@@ -279,6 +294,5 @@ $(document).ready(function () {
        $("#pt-1").css("display", "none");
     });
   
-  $('.counter-count').each(function(){$(this).prop('Counter',0).animate({Counter:$(this).text()},{duration:2000,easing:'swing',step:function(now){$(this).text(Math.ceil(now))}})})
 
 });
