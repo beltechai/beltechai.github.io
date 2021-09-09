@@ -173,6 +173,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    overflow: scroll;
   }
 
   .building{
@@ -425,6 +426,7 @@ nav {
 .content-lg {
   width: 90%;
   margin: auto;
+  overflow: scroll;
 }
 
 .content-md {
@@ -740,6 +742,7 @@ p {
 {   padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    margin: 0 10%;
 }
 
 .skill5 .counter-count 
@@ -776,7 +779,7 @@ p {
 {
     font-size: 24px;
     font-weight: 400;
-    color: #ffffff;
+    color: #000000;
     line-height: 34px;
 }
 
@@ -920,6 +923,7 @@ section.dark {
     top: 50%;
     transform: translate(0, -50%);
     width: 80%;
+    overflow: scroll;
   }
 }
 
@@ -1150,6 +1154,7 @@ p.social-links {
 
   .content-lg {
     margin-top: 30px;
+    overflow: scroll;
   }
 
   .data-wrapper {
