@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
   <link rel="manifest" href="./img/site.webmanifest" />
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Beltech AI is one of the leading AI & IoT based company in India.Beltech AI's vision is to make urban and rural infrastructure smarter, in order to facilitate faster, easier, and transparent governance. We achieve this using state of the art AI and integrating it with public infrastructure.">
@@ -40,19 +40,14 @@
   </div>
   <header aria-label="home"></header>
   <nav></nav>
-  <section class="intro home-bg dark dark-color">
+  <section class="intro home-bg dark dark-color" id="home">
     <div class="split-wrapper">
       <div class="split product-text">
         <div class="content-lg">
-          <h1 class="light-color center padding-lr2">Building Cities of the Future</h1>
+          <h1 class="light-color center padding-lr2 margin-t24p">Building Cities of the Future</h1>
           <p class="light-color center">
             with AI and IoT
           </p>
-          <div class="button-wrapper">
-            <a href="#product"><button>View Our Product</button></a>
-            <a href="#careers"><button class="color">
-                Join the Team <i class="fas fa-user-friends"></i></button></a>
-          </div>
         </div>
       </div>
       <div class="split">
@@ -61,131 +56,141 @@
     </div>
     <div id="about"></div>
   </section>
-  <section>
-    <div class="content-lg">
-      <div class="info-wrapper">
-        <div class="content-about">
+  <section id="about">
+    <div class="content-lg" style="margin: 3%;">
+      <div class="content-about">
+        <div>
           <h3>About Us</h3>
           <hr />
-          <p class="mr10">
-            Beltech AI's vision is to make urban and rural infrastructure smarter, in
-            order to facilitate faster, easier, and transparent governance. We
-            achieve this using state of the art AI and integrating it with
-            public infrastructure.
-          </p>
         </div>
-        <div class="content-about">
-          <video controls muted autoplay loop>
-            <source src="https://traffic-light-videos.beltech.ai/beltech-product.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="grey fix-space-bottom fix-space-top">
-    <h3 class="center margins light-text">Our Advisors</h3>
-    <div class="content-lg">
-      <div class="info-wrapper" id="advisor">
+        <ul style="margin: 10% 0;">
+          <li>
+            <p>
+              Beltech AI's vision is to make urban and rural infrastructure smarter, in
+              order to facilitate faster, easier, and transparent governance.
+            </p>
+          </li>
+          <li>
+            <p>
+              We achieve this using state of the art AI and integrating it with
+              public infrastructure.
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
     <div id="product"></div>
   </section>
-  <section class="dark dark-color fix-space-bottom fix-space-top">
-    <h3 class="center margins">Our Products</h3>
-    <div class="content-lg">
-      <div class="info-wrapper">
-        <div class="card info-tile">
-          <div class="height350">
-            <div class="infographic" style="height:60px"><span class="iconify" data-icon="fa-solid:traffic-light"
-                data-inline="false"></span>
-            </div>
-            <div class="title" style="height:50px">Traffic Management</div>
-            <ul>
-              <li>Traffic Management using AI</li>
-              <li>Automatic Traffic Violation Detection</li>
-            </ul>
-          </div>
+  <section class="home-product-text" style="background-color: #50b590;" id="product">
+    <div class="split-wrapper">
+      <div class="split product-text">
+        <div class="content-lg" style="margin-top: 0 !important;color: white !important;">
+          <h1>Traffic Management</h1>
+          <p><span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle" data-inline="false"></span>
+            Traffic Management using AI</p>
+          <p><span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle" data-inline="false"></span>
+            Automatic Traffic Violation Detection</p>
           <div class="button-wrapper">
             <a href="./traffic-mangement"><button>View Details</button></a>
           </div>
         </div>
-        <div class="card info-tile">
-          <div class="height350">
-            <div class="infographic" style="height:60px"><i class="fas fa-user-shield"></i></div>
-            <div class="title" style="height:50px">Security</div>
-            <ul>
-              <li>Crime Detection</li>
-              <li>Tracking of Suspected Criminals</li>
-              <li>Women Safety</li>
-            </ul>
-          </div>
+      </div>
+      <div class="split">
+        <video muted controls autoplay loop src="./video/video15.mp4" type="video/mp4" class="product-video">
+        </video>
+      </div>
+    </div>
+
+  </section>
+  <section class="home-product-text" style="background-color: #e48339;" id="product">
+    <div class="split-wrapper">
+      <div class="split">
+        <video muted controls autoplay loop src="./video/security.mp4" type="video/mp4" class="product-video mlp10">
+        </video>
+      </div>
+      <div class="split product-text">
+        <div class="content-lg align-right" style="margin-top: 0 !important;color: white !important;">
+          <h1>Security</h1>
+          <p>Crime Detection <span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle"
+              data-inline="false"></span></p>
+          <p>Women Safety <span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle"
+              data-inline="false"></span></p>
+          <p>Tracking of Suspected Criminals <span class="iconify" style="font-size: 8px;"
+              data-icon="fa-solid:dot-circle" data-inline="false"></span></p>
           <div class="button-wrapper">
             <a href="./security"><button>View Details</button></a>
           </div>
         </div>
-        <div class="card info-tile">
-          <div class="height350">
-            <div class="infographic" style="height:60px"><span class="iconify" data-icon="emojione-monotone:cityscape"
-                data-inline="false"></span></div>
-            <div class="title" style="height:50px">Smart City</div>
-            <ul>
-              <li>Public WiFi for Entire City</li>
-              <li>Garbage Detection and Tracking</li>
-              <li>Smart Street Lights</li>
-              <li>Pothole Tracking</li>
-            </ul>
-          </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="home-product-text" style="background-color: #2371e8;" id="product">
+    <div class="split-wrapper">
+      <div class="split product-text">
+        <div class="content-lg" style="margin-top: 0 !important;color: white !important;">
+          <h1>Smart City</h1>
+          <p><span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle" data-inline="false"></span>
+            Garbage Detection and Tracking</p>
+          <p><span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle" data-inline="false"></span>
+            Pothole Tracking</p>
+          <p><span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle" data-inline="false"></span>
+            Smart Street Lights</p>
           <div class="button-wrapper">
             <a href="./smart-city"><button>View Details</button></a>
           </div>
         </div>
-        <div class="card info-tile">
-          <div class="height350">
-            <div class="infographic" style="height:60px"><i class="fas fa-bus"></i></div>
-            <div class="title" style="height:50px">Public Transport</div>
-            <ul>
-              <li>Smart Buses</li>
-              <li>Smart Tickets</li>
-              <li>Public Transport Locator</li>
-            </ul>
-          </div>
+      </div>
+      <div class="split">
+        <video muted autoplay controls loop src="./video/smart_city.mp4" type="video/mp4" class="product-video">
+        </video>
+      </div>
+    </div>
+  </section>
+  <section class="home-product-text" style="background-color: #f5c145;" id="product">
+    <div class="split-wrapper">
+      <div class="split">
+        <video muted autoplay controls loop src="./video/public_transport.mp4" type="video/mp4" class="product-video mlp10">
+        </video>
+      </div>
+      <div class="split product-text">
+        <div class="content-lg align-right" style="margin-top: 0 !important;color: white !important;">
+          <h1>Public Transport</h1>
+          <p>Smart Buses <span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle"
+              data-inline="false"></span></p>
+          <p>Public Transport Locator <span class="iconify" style="font-size: 8px;" data-icon="fa-solid:dot-circle"
+              data-inline="false"></span></p>
           <div class="button-wrapper">
             <a href="./public-transport"><button>View Details</button></a>
           </div>
         </div>
       </div>
     </div>
-    <div id="team"></div>
   </section>
-<!--   <section class="grey fix-space-bottom fix-space-top">
-    <div class="skill5 row">
-          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="margin: 0 auto;">
-            <div class="skill5-counter">
-              <p class="counter-count">100</p>
-              <p class="counter-bottom">Number of hours<br/> saved in traffic</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="margin: 0 auto;">
-            <div class="skill5-counter">
-              <p class="counter-count">80</p>
-              <p class="counter-bottom">Amount of CO<sub>2</sub><br/> reduced</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="margin: 0 auto;">
-            <div class="skill5-counter">
-              <p class="counter-count">70</p>
-              <p class="counter-bottom">Fuel value saved</p>
-            </div>
-          </div>
-    </div>
-  </section> -->
-  <section class="fix-space-bottom">
-    <div class="content-md">
-      <h3 class="center">Our Core Team</h3>
-      <div class="team-wrapper"></div>
-      <div class="button-wrapper">
-        <a href="./team"><button class="color">
-            Our Complete Team <i class="fas fa-user-friends"></i></button></a>
+  <section class="fix-space-bottom fix-space-top" id="impact">
+    <h3 class="center">Impact</h3>
+    <div class="content-lg skill5">
+      <div class="info-wrapper">
+        <div class="skill5-counter info-tile">
+          <p class="counter-count">30 sec</p>
+          <p class="counter-bottom">Time saved by a vehicle<br /> per junction per day</p>
+        </div>
+        <div class="skill5-counter info-tile">
+          <p class="counter-count">25,000 min</p>
+          <p class="counter-bottom">Time saved at a junction<br /> per day</p>
+        </div>
+        <div class="skill5-counter info-tile">
+          <p class="counter-count">83,000 hr</p>
+          <p class="counter-bottom">Time saved in a city<br /> per day</p>
+        </div>
+        <div class="skill5-counter info-tile">
+          <p class="counter-count">75,000 ltr</p>
+          <p class="counter-bottom">Fuel saved per day<br /> per city</p>
+        </div>
+        <div class="skill5-counter info-tile">
+          <p class="counter-count">200 tons</p>
+          <p class="counter-bottom">Toxic emission reduced<br /> per day per city</p>
+        </div>
       </div>
     </div>
   </section>
@@ -195,39 +200,37 @@
       Smart
       Cities. For free!</p>
     <h5 class="center margins-xl coming-soon">COMING &nbsp;&nbsp;SOON</h5>
-    <div id="careers"></div>
-  </section>
-  <section class="dark dark-color fix-space-bottom">
-    <div class="content-lg">
-      <h3>Join Our Team</h3>
-      <hr class="bottom-margin" />
-      <h6>Who we are looking for: </h6>
-      <p>We value trajectory of growth over years of experience. Join us if you:</p>
-      <p>1. Are motivated by big gnarly problems, not by titles.</p>
-      <p>2. Are a generalist looking for a challenge to prove yourself.</p>
-      <p>
-        3. Are hungry for learning, winning and have something outstanding to
-        show for it.
-      </p>
-      <p>
-        4. Understand when to make trade-offs and are insistent that quality
-        doesn't always have to compromise speed.
-      </p>
-      <p>
-        5. Are a team player and understand a certain level of empathy is
-        required to empower an entire team over the individual.
-      </p>
-    </div>
-    <div class="button-wrapper">
-      <a href="./careers"><button class="color">
-          Open Roles<i class="fas fa-briefcase"></i></button></a>
-    </div>
     <div id="contact"></div>
   </section>
-  <section>
+  <section id="contact">
     <div class="content-lg">
       <h3 class="center">Contact</h3>
       <div class="contact-wrapper">
+        <div class="details">
+          <p>Fields that are marked as (*) are mandatory fields</p>
+          <form id="contactForm" class="contact-form">
+            <input type="text" id="username" name="username" placeholder="Name*">
+            <input type="email" id="email" name="email" placeholder="Email*">
+            <input type="number" id="phone" name="phone" placeholder="Phone*">
+            <input type="text" id="org" name="org" placeholder="Organisation Name">
+            <p><span style="font-size: 14px;">Select Product(s) that you're interested in *</span></p>
+         
+             
+                Traffic Management<input type="checkbox"  name="product1" value="Traffic Management" style="width:20px !important;margin-right: 5%;">
+             
+                Security<input type="checkbox"name="product2" value="Security" style="width:20px !important;margin-right: 5%;">
+             
+                Smart City<input type="checkbox" name="product3" value="Smart City" style="width:20px !important;margin-right: 5%;">
+            
+                Public Transport<input type="checkbox"  name="product4" value="Public Transport" style="width:20px !important;margin-right: 5%;">
+            
+            <textarea class="comment-area" rows="6" name="details"
+              placeholder="Tell us about your requirement (optional)" spellcheck="true"></textarea>
+          </form>
+          <div style="display: flex;justify-content: center;">
+            <button class="color" onclick="SubForm()">Submit</button>
+          </div>
+        </div>
         <div class="details">
           <h6>Office Address</h6>
           <p>
@@ -235,27 +238,24 @@
             <span>Kaveriappa Layout, Vasanthnagar,</span>
             <span>Bengaluru, Karnataka 560052</span>
           </p>
-        </div>
-        <div class="details">
-          <h6>E-mail</h6>
-          <p><a style="border: 0 !important;" href="mailto:office@beltech.ai">office@beltech.ai</a></p>
-        </div>
-        <div class="details">
-          <h6>Phone Number</h6>
-          <p>+91-9845102222</p>
-        </div>
-        <div class="details">
-          <h6>Connect</h6>
-          <p class="social-links">
-            <a href="https://www.linkedin.com/company/beltechai/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://angel.co/company/beltechai" target="_blank"><i class="fab fa-angellist"></i></a>
-          </p>
+          <div class="details">
+            <h6>E-mail</h6>
+            <p><a style="border: 0 !important;" href="mailto:office@beltech.ai">office@beltech.ai</a></p>
+          </div>
+          <div class="details">
+            <h6>Phone Number</h6>
+            <p>+91-9845102222</p>
+          </div>
+          <div class="details">
+            <h6>Connect</h6>
+            <p class="social-links">
+              <a href="https://www.linkedin.com/company/beltechai/" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="https://angel.co/company/beltechai" target="_blank"><i class="fab fa-angellist"></i></a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div style="display: flex;justify-content: center;">
-      <a href="../contact">
-        <button class="color">Contact Us</button></a>
     </div>
   </section>
   <footer></footer>
@@ -269,110 +269,98 @@
   <script type="text/javascript" src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
   <script>
-    function generateCareerElem(data, index) {
-      return `<div class="team-member" aria-label="${index}">
-    <div class="photo"><img src="/team/${data.ImagePath}" alt="Team member image"/></div>
-    <p class="lg">${data.Name}</p>
-    <p>${data.Position}</p>
-  </div>`;
-    }
-
-    function generateAdvisorElem(data, index) {
-      return `<div class="card info-tile" style="height:250px;background: transparent !important;margin: 4rem;padding: 0 !important;">
-           <img src="./advisor/${data.ImagePath}" style="width: 100%;height:100%;"/>
-           <div style="width: 100%;
-           height: 100%;
-           position: relative;
-           bottom: 248px;
-           background: linear-gradient(180deg, #ffffff30,#ffffff00, #191d24) !important;
-           ">
-          <div style="padding-top: 190px;">
-          <h5 style="color: white;text-align: center;">${data.Name}</h5>
-          <p style="color: orange;text-align: center;margin-top: 5px;font-size:10px;">${data.Position}</p>
-          </div>
-          </div>
-        </div>`;
-    }
-
-    function generatePopUp(data) {
-      return `<div class="close-button"><i class="fas fa-times"></i></div>
-  <div class="content-lg">
-    <div class="data-wrapper">
-      <div class="photo">
-        <img src="/team/${data.ImagePath}" alt="Member Photo" />
-      </div>
-      <div class="data">
-        <h5>${data.Name}</h5>
-        <p><b>${data.Position}</b> &middot; <b>${data.Location}</b></p>
-        <p>
-        ${data.LinkedIn != "NA"
-          ? `<a href="${data.LinkedIn}">LinkedIn</a> &middot;`
-          : ""
-        } ${data.Website != "NA" ? `<a href="${data.Website}">Website</a> &middot;` : ""
-        }  ${data.Resume != "NA" ? `<a href="${data.Resume}">Resume</a>` : ""}
-        </p>
-      </div>
-    </div>
-    <h6>About</h6>
-    <p>
-      ${data.About}
-    </p>
-    <h6>Educational Institution</h6>
-    <p>jnjj 
-      ${data.School}
-    </p>
-  </div>`;
-    }
-
-    function fillCareers(arr) {
-      $(".team-wrapper").html("");
-      arr.map((doc, index) => {
-        if (index <= 5) {
-          $(".team-wrapper").append(generateCareerElem(doc, index));
-        }
-      });
-    }
-
-    function fillAdvisor(arr) {
-      $("#advisor").html("");
-      arr.map((doc, index) => {
-          $("#advisor").append(generateAdvisorElem(doc, index));
-      });
-    }
-
-
-    function openPopUp(doc) {
-      $(".team-pop-up").removeClass("close");
-      $(".black-screen").removeClass("close");
-      $(".team-pop-up").html(generatePopUp(doc));
-    }
-
-    var data;
-    var ad_data;
-
+    let header_links = []
     $(document).ready(function () {
-      jQuery.get("/team/team.csv", (csv) => {
-        data = $.csv.toObjects(csv);
-        fillCareers(data);
-        $(".team-wrapper").on("click", ".team-member", function () {
-          let i = $(this).attr("aria-label");
-          openPopUp(data[i]);
-        });
+      header_links = document.getElementsByClassName("link");
+    })
+    function SubForm() {
+      let values = $("#contactForm").serializeArray();
+      console.log(values)
+      if (values[0].value != "" && values[1].value != "" && values[2].value != "" && values[4].value != "none") {
+        let valid_email = validateEmail(values[1].value);
+        if (valid_email == true) {
+          if (values[2].value.length == 10) {
+            $.ajax({
+              url: 'https://api.apispreadsheets.com/data/19048/',
+              type: 'post',
+              data: $("#contactForm").serializeArray(),
+              success: function () {
+                $("#contactForm")[0].reset();
+                alert("Thanks for contacting us :)");
+              },
+              error: function (err) {
+                alert("There was an error sending your details:(")
+                console.log(err)
+              }
+            });
+          }
+          else {
+            alert("Enter a valid phone number!")
+          }
+        }
+        else {
+          alert("Enter a valid email!")
+        }
 
-        $(".team-pop-up").on("click", ".close-button", function () {
-          $(".team-pop-up").addClass("close");
-          $(".black-screen").addClass("close");
-        });
+      }
+      else {
+        alert("Mandatory fields can not be empty!")
+      }
 
-        $(".black-screen").click(function () {
-          $(".team-pop-up").addClass("close");
-          $(".black-screen").addClass("close");
-        });
-      });
+    }
+    function validateEmail(emailAdress) {
+      let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (emailAdress.match(regexEmail)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
 
-      jQuery.get("/advisor/advisor.csv", (csv) => {
-        ad_data = $.csv.toObjects(csv);
-        fillAdvisor(ad_data);
+    $(document).scroll(function () {
+      $('section').each(function () {
+        if ($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+          switch ($(this).attr('id')) {
+            case "home":
+              header_links[0].classList.add('current');
+              header_links[1].classList.remove('current');
+              header_links[2].classList.remove('current');
+              header_links[3].classList.remove('current');
+              header_links[6].classList.remove('current');
+              break;
+            case "about":
+              header_links[0].classList.remove('current');
+              header_links[1].classList.add('current');
+              header_links[2].classList.remove('current');
+              header_links[3].classList.remove('current');
+              header_links[6].classList.remove('current');
+              break;
+            case "product":
+              header_links[0].classList.remove('current');
+              header_links[1].classList.remove('current');
+              header_links[2].classList.add('current');
+              header_links[3].classList.remove('current');
+              header_links[6].classList.remove('current');
+              break;
+            case "impact":
+              header_links[0].classList.remove('current');
+              header_links[1].classList.remove('current');
+              header_links[2].classList.remove('current');
+              header_links[3].classList.add('current');
+              header_links[6].classList.remove('current');
+              break;
+            case "contact":
+              header_links[0].classList.remove('current');
+              header_links[1].classList.remove('current');
+              header_links[2].classList.remove('current');
+              header_links[3].classList.remove('current');
+              header_links[6].classList.add('current');
+              break;
+            default:
+            // code block
+          }
+
+        }
       });
     });
   </script>
