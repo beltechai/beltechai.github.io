@@ -1,5 +1,5 @@
 function generateCareerElem(data) {
-  console.log(data)
+
   return `<div class="career">
       <h6 class="margins">${data.Position}</h6>
       <p>

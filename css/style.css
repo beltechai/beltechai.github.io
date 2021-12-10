@@ -108,7 +108,50 @@ body {
 #tm-1,#sec-1,#sc-1,#pt-1 {
   display: none;
 }
+.product_checkbox{
+  width:25%;
+  font-size: 12px;
+}
+.product-video{
+  width:90% !important;
+  height:93% !important;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 50%);
+  margin-top: -12%;
+  margin-bottom: 15%;
 
+}
+.mlp10{
+  margin-left: 10%;
+}  
+.contact-form input{
+  width: 90%;
+  border: 2px solid #dbdfe4;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.contact-form select{
+  width: 90%;
+  border: 2px solid #dbdfe4;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.comment-area{
+  width: 90%;
+  border: 2px solid #dbdfe4;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
 a {
   color: inherit !important;
   text-decoration: none !important; }
@@ -120,12 +163,20 @@ a {
 /* header.force-white {
   background: #fff !important; } */
 
+  .companyname{
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    top: 48px;
+    font-size: 20px;
+  }
+
   video{
   width:100%;
   }
 
   .building{
-    height: 40rem;
+    height: 100%;
     width:100%;
   }
 
@@ -136,17 +187,18 @@ a {
   .dropdown-content {
     display: none;
     position: fixed;
-    background-color:#f9f9f9ed;
+    background-color:#000000ed;
     width: 300px;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 16px 0 rgb(255 255 255 / 60%);
+    color: white;
     z-index: 1;
-    top: 10%;
-    right: 4%;
+    top: 8%;
+    right: 8%;
   }
   
   .dropdown-content a {
     float: none;
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -154,7 +206,7 @@ a {
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #1c1c1f;
   }
 
 header {
@@ -354,6 +406,14 @@ header.min {
   header.min .logo {
     height: 100%; }
 
+  header.min .companyname{
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    top: 33px;
+    font-size: 20px;
+  }
+
     .row {
       display: flex;
     }
@@ -364,6 +424,9 @@ header.min {
 .margins-xl {
   margin: 50px 0px; }
 
+.margin-t24p{
+  margin-top: 24% !important;
+}
 
 .padding-lr2{
   padding: 0 2rem;
@@ -432,10 +495,12 @@ nav {
 
 .content-lg {
   width: 90%;
-  margin: auto; }
+  margin: auto; 
+  overflow: scroll;
+}
 
 .content-md {
-  width: 75%;
+  width: 60%;
   margin: 0 auto; }
 
 .content {
@@ -475,7 +540,7 @@ section.light-grey {
   background: #f5f9fc; }
 
 section.home-bg {
-  background: url("../img/Back.png");
+/*   background: url("../img/Back.png"); */
   background-size: cover;
   background-position: center bottom; }
 
@@ -683,14 +748,13 @@ button:hover:after {
 
   .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(216, 216, 216, 0.2) !important;
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%) !important;
     transition: 0.3s;
     background: linear-gradient(180deg, #ffffff, #a2a2a2) !important;
   }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 
-  0 8px 16px 0 rgba(255, 253, 253, 0.2);
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%) !important;
   }
 
 p {
@@ -755,6 +819,51 @@ p {
 
 .vision-split .split {
   background-color: #191d24; }
+
+  .skill5
+{   padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.skill5 .counter-count 
+{    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    font-size: 40px;
+    background-color: #2f90e7;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    font-size: 1.5rem !important;
+    text-align: center;
+    line-height: 172px;
+    width: 192px;
+    height: 192px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    text-shadow: rgb(232, 232, 232) 1px 1px, rgb(13, 115, 188) 2px 2px, rgb(13, 115, 188) 3px 3px, rgb(13, 115, 188) 4px 4px, rgb(13, 115, 188) 5px 5px, rgb(13, 115, 188) 6px 6px, rgb(13, 115, 188) 7px 7px, rgb(13, 115, 188) 8px 8px, rgb(13, 115, 188) 9px 9px, rgb(13, 115, 188) 10px 10px, rgb(13, 115, 188) 11px 11px, rgb(13, 115, 188) 12px 12px, rgb(13, 116, 189) 13px 13px, rgb(13, 116, 189) 14px 14px, rgb(13, 116, 189) 15px 15px, rgb(13, 116, 189) 16px 16px, rgb(13, 117, 191) 17px 17px, rgb(13, 117, 191) 18px 18px, rgb(13, 117, 191) 19px 19px, rgb(13, 118, 192) 20px 20px, rgb(13, 118, 192) 21px 21px, rgb(14, 119, 194) 21px 21px, rgb(14, 120, 196) 22px 22px, rgb(14, 121, 197) 23px 23px, rgb(14, 122, 199) 24px 24px, rgb(14, 123, 201) 25px 25px, rgb(14, 124, 203) 26px 26px, rgb(14, 125, 204) 27px 27px, rgb(14, 126, 206) 28px 28px, rgb(15, 127, 208) 29px 29px, rgb(15, 128, 209) 30px 30px;
+}
+
+.skill5 .counter-count .counter-percent
+{	
+	font-size: 1.5rem !important;
+    color: #ffffff;
+    margin-left: 1px;
+    text-shadow: rgb(13, 115, 188) 1px 1px, rgb(13, 115, 188) 2px 2px, rgb(13, 115, 188) 3px 3px, rgb(13, 115, 188) 4px 4px, rgb(13, 115, 188) 5px 5px, rgb(13, 115, 188) 6px 6px, rgb(13, 115, 188) 7px 7px, rgb(13, 115, 188) 8px 8px, rgb(13, 115, 188) 9px 9px, rgb(13, 115, 188) 10px 10px, rgb(13, 115, 188) 11px 11px, rgb(13, 115, 188) 12px 12px, rgb(13, 116, 189) 13px 13px, rgb(13, 116, 189) 14px 14px, rgb(13, 116, 189) 15px 15px, rgb(13, 116, 189) 16px 16px, rgb(13, 117, 191) 17px 17px, rgb(13, 117, 191) 18px 18px, rgb(13, 117, 191) 19px 19px, rgb(13, 118, 192) 20px 20px, rgb(13, 118, 192) 21px 21px, rgb(14, 119, 194) 21px 21px, rgb(14, 120, 196) 22px 22px, rgb(14, 121, 197) 23px 23px, rgb(14, 122, 199) 24px 24px, rgb(14, 123, 201) 25px 25px, rgb(14, 124, 203) 26px 26px, rgb(14, 125, 204) 27px 27px, rgb(14, 126, 206) 28px 28px, rgb(15, 127, 208) 29px 29px, rgb(15, 128, 209) 30px 30px;
+    
+}
+
+.skill5 .counter-bottom
+{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 34px;
+}
 
 footer {
   padding: 50px 0px;
@@ -865,9 +974,24 @@ section.dark .info-wrapper .info-tile .title {
 .intro.products {
   padding-top: 100px !important;
   padding-bottom: 50px !important; }
+  
+  .home-product-text{
+    padding-bottom: 0 !important;
+  }
+
+  .home-product-text p {
+    font-size: x-large;
+    color: white !important;
+  }
+
+  .home-product-text button {
+    background: transparent;
+    border: 1px solid white;
+  }
 
 .product-text {
-  position: relative; }
+  position: relative; 
+}
   .product-text .content-lg,
   .product-text .content-home-lg,
   .product-text .content-about-lg {
@@ -876,7 +1000,9 @@ section.dark .info-wrapper .info-tile .title {
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    width: 80%; }
+    width: 80%;
+    height: 90%;
+   }
 
 .traffic-lights {
   height: auto;
@@ -1143,9 +1269,10 @@ p.social-links a:hover {
     margin-right: 10rem;
   }
   .building{
-    height: 40rem;
+    height: 100%;
     width:100%;
   }
+
   .content, .content-home {
     width: 50%; }
   .content-md, .content-home-md{
@@ -1153,7 +1280,8 @@ p.social-links a:hover {
   .content, .content-about {
       width: 50%; }
   .content-md, .content-about-md{
-      width: 90%; }
+      width: 90%;
+     }
   button {
     font-size: 0.7rem; }
   .tablet-section {
@@ -1227,7 +1355,9 @@ p.social-links a:hover {
     -webkit-transform: translate(0, 0%);
     -ms-transform: translate(0, 0%);
     transform: translate(0, 0%);
-    width: 90%; }
+    width: 90%;
+    height: 90%;
+   }
   .traffic-lights {
     display: none; }
   .features-wrapper .circle-image {
@@ -1245,8 +1375,25 @@ p.social-links a:hover {
     margin-right: 0rem;
   }  
   .building{
-    height: 22rem;
+    height: 23rem;
     width:100%;
+  }
+  .product_checkbox{
+    width:25%;
+    font-size: 10px;
+  }
+  
+  .home-product-text p {
+    font-size: 16px;
+    color: white !important;
+  }
+  .product-video{
+    width:100% !important;
+    height:95% !important;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 50%);
+    margin-top:0;
+    margin-bottom: 0;
+   margin-left: 0;
   }
   .content,
   .content-home,
