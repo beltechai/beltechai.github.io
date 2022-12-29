@@ -1,6 +1,6 @@
 {
   "name": "beltech_website",
-  "home":"https://www.beltech.ai/",
+  "homepage":"https://www.beltech.ai/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
