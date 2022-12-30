@@ -17,7 +17,7 @@ const Home = () => {
       <Container>
         <HeadingContainer>
           <Circle />
-          <HeadingText>Building Cities of the Future</HeadingText>
+          <HeadingText>Building Citie of the Future</HeadingText>
           <SubHeadingText>With AI and IoT</SubHeadingText>
           <Circle2 />
         </HeadingContainer>
